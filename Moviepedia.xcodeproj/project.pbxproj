@@ -14,6 +14,11 @@
 		B53B297421C3CF4300320059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53B297221C3CF4300320059 /* LaunchScreen.storyboard */; };
 		B53B297F21C3CF4300320059 /* MoviepediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B297E21C3CF4300320059 /* MoviepediaTests.swift */; };
 		B53B298A21C3CF4400320059 /* MoviepediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B298921C3CF4400320059 /* MoviepediaUITests.swift */; };
+		B53B299A21C3D46500320059 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299921C3D46500320059 /* Film.swift */; };
+		B53B299C21C3D48500320059 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299B21C3D48500320059 /* Person.swift */; };
+		B53B299E21C3D49900320059 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299D21C3D49900320059 /* Director.swift */; };
+		B53B29A021C3D4E300320059 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299F21C3D4E300320059 /* Actor.swift */; };
+		B572B40F21D6A9E100C48908 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572B40E21D6A9E100C48908 /* DataHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		B53B298521C3CF4300320059 /* MoviepediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviepediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53B298921C3CF4400320059 /* MoviepediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviepediaUITests.swift; sourceTree = "<group>"; };
 		B53B298B21C3CF4400320059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53B299921C3D46500320059 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		B53B299B21C3D48500320059 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B53B299D21C3D49900320059 /* Director.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Director.swift; sourceTree = "<group>"; };
+		B53B299F21C3D4E300320059 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		B572B40E21D6A9E100C48908 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		B53B296821C3CF3F00320059 /* Moviepedia */ = {
 			isa = PBXGroup;
 			children = (
+				B53B299721C3D41400320059 /* Model */,
 				B53B296921C3CF3F00320059 /* AppDelegate.swift */,
 				B53B296B21C3CF3F00320059 /* ViewController.swift */,
 				B53B296D21C3CF3F00320059 /* Main.storyboard */,
@@ -123,6 +134,18 @@
 				B53B298B21C3CF4400320059 /* Info.plist */,
 			);
 			path = MoviepediaUITests;
+			sourceTree = "<group>";
+		};
+		B53B299721C3D41400320059 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B53B299921C3D46500320059 /* Film.swift */,
+				B53B299B21C3D48500320059 /* Person.swift */,
+				B53B299D21C3D49900320059 /* Director.swift */,
+				B53B299F21C3D4E300320059 /* Actor.swift */,
+				B572B40E21D6A9E100C48908 /* DataHandler.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53B296C21C3CF3F00320059 /* ViewController.swift in Sources */,
+				B572B40F21D6A9E100C48908 /* DataHandler.swift in Sources */,
+				B53B299A21C3D46500320059 /* Film.swift in Sources */,
+				B53B299E21C3D49900320059 /* Director.swift in Sources */,
+				B53B29A021C3D4E300320059 /* Actor.swift in Sources */,
+				B53B299C21C3D48500320059 /* Person.swift in Sources */,
 				B53B296A21C3CF3F00320059 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
