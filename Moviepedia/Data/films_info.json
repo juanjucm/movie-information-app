@@ -1,0 +1,54 @@
+{
+    "films": [
+        {
+            "id": 0,
+            "name": "Inception",
+            "year": "2010",
+            "time" : "148",
+            "country": "United States",
+            "director": "Christopher Nolan",
+            "cast": ["Leonardo DiCaprio",
+                     "Ellen Page"
+                    ],
+            "photo_name": "inception"
+        },
+        {
+            "id": 1,
+            "name": "Interestellar",
+            "year": "2014",
+            "time" : "169",
+            "country": "United States",
+            "director": "Christopher Nolan",
+            "cast": ["Matthew McConaughey",
+                     "Anne Hathaway"
+            ],
+            "photo_name": "interestellar"
+        },
+        {
+            "id": 2,
+            "name": "Star Wars Episode V: The Empire Strikes Back",
+            "year": "1980",
+            "time" : "124",
+            "country": "United States",
+            "director": "Irvin Kershner",
+            "cast": ["Mark Hammill",
+                     "Harrison Ford",
+                     "Carrie Fisher",
+            ],
+            "photo_name": "swepisodev"
+        },
+        {
+            "id": 3,
+            "name": "Star Wars Episode IV: A New Hope",
+            "year": "1977",
+            "time" : "121",
+            "country": "United States",
+            "director": "George Lucas",
+            "cast": ["Mark Hammill",
+                     "Harrison Ford",
+                     "Carrie Fisher",
+            ],
+            "photo_name": "swepisodeiv"
+        }
+    ]
+}

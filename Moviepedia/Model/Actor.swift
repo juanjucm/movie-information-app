@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class Actor: Person {
     var biography:String?
     var photo:String?

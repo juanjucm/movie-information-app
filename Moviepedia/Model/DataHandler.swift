@@ -13,9 +13,8 @@ final class DataHandler {
     var actors = [Actor]()
     var directors = [Director]()
     
-    //Singleton pattern
-    private static let shared = DataHandler()
+    //Unique instance for singleton pattern.
+    static let shared = DataHandler()
     
     private init(){}
-    
 }

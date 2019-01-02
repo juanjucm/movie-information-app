@@ -18,6 +18,23 @@
 		B53B299C21C3D48500320059 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299B21C3D48500320059 /* Person.swift */; };
 		B53B299E21C3D49900320059 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299D21C3D49900320059 /* Director.swift */; };
 		B53B29A021C3D4E300320059 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299F21C3D4E300320059 /* Actor.swift */; };
+		B56B1B8221DD153E003ACA3A /* films_info.json in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8121DD153E003ACA3A /* films_info.json */; };
+		B56B1B8921DD1D00003ACA3A /* directors_info.json in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8821DD1D00003ACA3A /* directors_info.json */; };
+		B56B1B9121DD204E003ACA3A /* kershner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8A21DD204E003ACA3A /* kershner.jpg */; };
+		B56B1B9221DD204E003ACA3A /* lucas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8B21DD204E003ACA3A /* lucas.jpg */; };
+		B56B1B9321DD204E003ACA3A /* swepisodeiv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8C21DD204E003ACA3A /* swepisodeiv.jpg */; };
+		B56B1B9421DD204E003ACA3A /* swepisodev.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8D21DD204E003ACA3A /* swepisodev.jpg */; };
+		B56B1B9521DD204E003ACA3A /* inception.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8E21DD204E003ACA3A /* inception.jpg */; };
+		B56B1B9621DD204E003ACA3A /* interestellar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8F21DD204E003ACA3A /* interestellar.jpg */; };
+		B56B1B9721DD204E003ACA3A /* nolan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B9021DD204E003ACA3A /* nolan.jpg */; };
+		B56B1B9B21DD214C003ACA3A /* actors_info.json in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B9A21DD214C003ACA3A /* actors_info.json */; };
+		B56B1BA421DD26BF003ACA3A /* ford.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B9D21DD26BF003ACA3A /* ford.jpg */; };
+		B56B1BA521DD26BF003ACA3A /* macconaughey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B9E21DD26BF003ACA3A /* macconaughey.jpg */; };
+		B56B1BA621DD26BF003ACA3A /* carrie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B9F21DD26BF003ACA3A /* carrie.jpg */; };
+		B56B1BA721DD26BF003ACA3A /* page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1BA021DD26BF003ACA3A /* page.jpg */; };
+		B56B1BA821DD26BF003ACA3A /* hamill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1BA121DD26BF003ACA3A /* hamill.jpg */; };
+		B56B1BA921DD26BF003ACA3A /* dicaprio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1BA221DD26BF003ACA3A /* dicaprio.jpg */; };
+		B56B1BAA21DD26BF003ACA3A /* hathaway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1BA321DD26BF003ACA3A /* hathaway.jpg */; };
 		B572B40F21D6A9E100C48908 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572B40E21D6A9E100C48908 /* DataHandler.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +73,23 @@
 		B53B299B21C3D48500320059 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B53B299D21C3D49900320059 /* Director.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Director.swift; sourceTree = "<group>"; };
 		B53B299F21C3D4E300320059 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		B56B1B8121DD153E003ACA3A /* films_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = films_info.json; sourceTree = "<group>"; };
+		B56B1B8821DD1D00003ACA3A /* directors_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = directors_info.json; sourceTree = "<group>"; };
+		B56B1B8A21DD204E003ACA3A /* kershner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kershner.jpg; sourceTree = "<group>"; };
+		B56B1B8B21DD204E003ACA3A /* lucas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lucas.jpg; sourceTree = "<group>"; };
+		B56B1B8C21DD204E003ACA3A /* swepisodeiv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swepisodeiv.jpg; sourceTree = "<group>"; };
+		B56B1B8D21DD204E003ACA3A /* swepisodev.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swepisodev.jpg; sourceTree = "<group>"; };
+		B56B1B8E21DD204E003ACA3A /* inception.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inception.jpg; sourceTree = "<group>"; };
+		B56B1B8F21DD204E003ACA3A /* interestellar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = interestellar.jpg; sourceTree = "<group>"; };
+		B56B1B9021DD204E003ACA3A /* nolan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nolan.jpg; sourceTree = "<group>"; };
+		B56B1B9A21DD214C003ACA3A /* actors_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = actors_info.json; sourceTree = "<group>"; };
+		B56B1B9D21DD26BF003ACA3A /* ford.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ford.jpg; path = ../../../../ford.jpg; sourceTree = "<group>"; };
+		B56B1B9E21DD26BF003ACA3A /* macconaughey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = macconaughey.jpg; path = ../../../../macconaughey.jpg; sourceTree = "<group>"; };
+		B56B1B9F21DD26BF003ACA3A /* carrie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = carrie.jpg; path = ../../../../carrie.jpg; sourceTree = "<group>"; };
+		B56B1BA021DD26BF003ACA3A /* page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = page.jpg; path = ../../../../page.jpg; sourceTree = "<group>"; };
+		B56B1BA121DD26BF003ACA3A /* hamill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hamill.jpg; path = ../../../../hamill.jpg; sourceTree = "<group>"; };
+		B56B1BA221DD26BF003ACA3A /* dicaprio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dicaprio.jpg; path = ../../../../dicaprio.jpg; sourceTree = "<group>"; };
+		B56B1BA321DD26BF003ACA3A /* hathaway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hathaway.jpg; path = ../../../../hathaway.jpg; sourceTree = "<group>"; };
 		B572B40E21D6A9E100C48908 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +141,8 @@
 		B53B296821C3CF3F00320059 /* Moviepedia */ = {
 			isa = PBXGroup;
 			children = (
+				B56B1B8321DD1806003ACA3A /* Assets */,
+				B56B1B7E21DD1424003ACA3A /* Data */,
 				B53B299721C3D41400320059 /* Model */,
 				B53B296921C3CF3F00320059 /* AppDelegate.swift */,
 				B53B296B21C3CF3F00320059 /* ViewController.swift */,
@@ -146,6 +182,61 @@
 				B572B40E21D6A9E100C48908 /* DataHandler.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B56B1B7E21DD1424003ACA3A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B56B1B8121DD153E003ACA3A /* films_info.json */,
+				B56B1B8821DD1D00003ACA3A /* directors_info.json */,
+				B56B1B9A21DD214C003ACA3A /* actors_info.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B56B1B8321DD1806003ACA3A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B56B1B9C21DD26AA003ACA3A /* actors */,
+				B56B1B9921DD205E003ACA3A /* directors */,
+				B56B1B9821DD2054003ACA3A /* films */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B56B1B9821DD2054003ACA3A /* films */ = {
+			isa = PBXGroup;
+			children = (
+				B56B1B8E21DD204E003ACA3A /* inception.jpg */,
+				B56B1B8F21DD204E003ACA3A /* interestellar.jpg */,
+				B56B1B8C21DD204E003ACA3A /* swepisodeiv.jpg */,
+				B56B1B8D21DD204E003ACA3A /* swepisodev.jpg */,
+			);
+			path = films;
+			sourceTree = "<group>";
+		};
+		B56B1B9921DD205E003ACA3A /* directors */ = {
+			isa = PBXGroup;
+			children = (
+				B56B1B8A21DD204E003ACA3A /* kershner.jpg */,
+				B56B1B8B21DD204E003ACA3A /* lucas.jpg */,
+				B56B1B9021DD204E003ACA3A /* nolan.jpg */,
+			);
+			path = directors;
+			sourceTree = "<group>";
+		};
+		B56B1B9C21DD26AA003ACA3A /* actors */ = {
+			isa = PBXGroup;
+			children = (
+				B56B1B9F21DD26BF003ACA3A /* carrie.jpg */,
+				B56B1BA221DD26BF003ACA3A /* dicaprio.jpg */,
+				B56B1B9D21DD26BF003ACA3A /* ford.jpg */,
+				B56B1BA121DD26BF003ACA3A /* hamill.jpg */,
+				B56B1BA321DD26BF003ACA3A /* hathaway.jpg */,
+				B56B1B9E21DD26BF003ACA3A /* macconaughey.jpg */,
+				B56B1BA021DD26BF003ACA3A /* page.jpg */,
+			);
+			path = actors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +343,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56B1B9721DD204E003ACA3A /* nolan.jpg in Resources */,
+				B56B1B9321DD204E003ACA3A /* swepisodeiv.jpg in Resources */,
+				B56B1BA521DD26BF003ACA3A /* macconaughey.jpg in Resources */,
+				B56B1B9B21DD214C003ACA3A /* actors_info.json in Resources */,
 				B53B297421C3CF4300320059 /* LaunchScreen.storyboard in Resources */,
+				B56B1B9221DD204E003ACA3A /* lucas.jpg in Resources */,
+				B56B1B9121DD204E003ACA3A /* kershner.jpg in Resources */,
+				B56B1B8221DD153E003ACA3A /* films_info.json in Resources */,
+				B56B1BA921DD26BF003ACA3A /* dicaprio.jpg in Resources */,
 				B53B297121C3CF4300320059 /* Assets.xcassets in Resources */,
+				B56B1BAA21DD26BF003ACA3A /* hathaway.jpg in Resources */,
+				B56B1BA421DD26BF003ACA3A /* ford.jpg in Resources */,
+				B56B1BA821DD26BF003ACA3A /* hamill.jpg in Resources */,
+				B56B1B9421DD204E003ACA3A /* swepisodev.jpg in Resources */,
+				B56B1B8921DD1D00003ACA3A /* directors_info.json in Resources */,
 				B53B296F21C3CF3F00320059 /* Main.storyboard in Resources */,
+				B56B1B9521DD204E003ACA3A /* inception.jpg in Resources */,
+				B56B1B9621DD204E003ACA3A /* interestellar.jpg in Resources */,
+				B56B1BA621DD26BF003ACA3A /* carrie.jpg in Resources */,
+				B56B1BA721DD26BF003ACA3A /* page.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
