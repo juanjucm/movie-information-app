@@ -14,7 +14,30 @@ final class DataHandler {
     var directors = [Director]()
     
     //Unique instance for singleton pattern.
-    static let shared = DataHandler()
+    private static let shared = DataHandler()
     
     private init(){}
+    
+    class func getShared() -> DataHandler {
+        return shared
+    }
+    
+    func parseActorsFromJSON() {
+        if let path = Bundle.main.path(forResource: "actors_info", ofType: "json", inDirectory:"Data") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? Dictionary<String, NSArray>{
+                    for a in jsonResult["actors"]!{
+                        if let actor = a as? Dictionary<String, AnyObject>{
+                            print(actor)
+                            //Create each actor class
+                        }
+                    }
+                }
+            } catch {
+                // handle error
+            }
+        }
+    }
 }

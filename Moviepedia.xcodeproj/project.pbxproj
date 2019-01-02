@@ -15,20 +15,11 @@
 		B53B297F21C3CF4300320059 /* MoviepediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B297E21C3CF4300320059 /* MoviepediaTests.swift */; };
 		B53B298A21C3CF4400320059 /* MoviepediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B298921C3CF4400320059 /* MoviepediaUITests.swift */; };
 		B53B299A21C3D46500320059 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299921C3D46500320059 /* Film.swift */; };
-		B53B299C21C3D48500320059 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299B21C3D48500320059 /* Person.swift */; };
 		B53B299E21C3D49900320059 /* Director.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299D21C3D49900320059 /* Director.swift */; };
 		B53B29A021C3D4E300320059 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B299F21C3D4E300320059 /* Actor.swift */; };
-		B56B1B8221DD153E003ACA3A /* films_info.json in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8121DD153E003ACA3A /* films_info.json */; };
-		B56B1B8921DD1D00003ACA3A /* directors_info.json in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8821DD1D00003ACA3A /* directors_info.json */; };
-		B56B1B9121DD204E003ACA3A /* kershner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8A21DD204E003ACA3A /* kershner.jpg */; };
-		B56B1B9221DD204E003ACA3A /* lucas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8B21DD204E003ACA3A /* lucas.jpg */; };
-		B56B1B9321DD204E003ACA3A /* swepisodeiv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8C21DD204E003ACA3A /* swepisodeiv.jpg */; };
-		B56B1B9421DD204E003ACA3A /* swepisodev.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8D21DD204E003ACA3A /* swepisodev.jpg */; };
-		B56B1B9521DD204E003ACA3A /* inception.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8E21DD204E003ACA3A /* inception.jpg */; };
-		B56B1B9621DD204E003ACA3A /* interestellar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B8F21DD204E003ACA3A /* interestellar.jpg */; };
-		B56B1B9B21DD214C003ACA3A /* actors_info.json in Resources */ = {isa = PBXBuildFile; fileRef = B56B1B9A21DD214C003ACA3A /* actors_info.json */; };
-		B56B1BAC21DD290E003ACA3A /* nolan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B56B1BAB21DD290E003ACA3A /* nolan.jpg */; };
 		B572B40F21D6A9E100C48908 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572B40E21D6A9E100C48908 /* DataHandler.swift */; };
+		B5975F0621DD5EAF00A8842E /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = B5975F0521DD5EAF00A8842E /* Assets */; };
+		B5975F1621DD616900A8842E /* Data in Resources */ = {isa = PBXBuildFile; fileRef = B5975F1521DD616900A8842E /* Data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,27 +54,11 @@
 		B53B298921C3CF4400320059 /* MoviepediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviepediaUITests.swift; sourceTree = "<group>"; };
 		B53B298B21C3CF4400320059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B53B299921C3D46500320059 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
-		B53B299B21C3D48500320059 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B53B299D21C3D49900320059 /* Director.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Director.swift; sourceTree = "<group>"; };
 		B53B299F21C3D4E300320059 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
-		B56B1B8121DD153E003ACA3A /* films_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = films_info.json; sourceTree = "<group>"; };
-		B56B1B8821DD1D00003ACA3A /* directors_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = directors_info.json; sourceTree = "<group>"; };
-		B56B1B8A21DD204E003ACA3A /* kershner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kershner.jpg; sourceTree = "<group>"; };
-		B56B1B8B21DD204E003ACA3A /* lucas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lucas.jpg; sourceTree = "<group>"; };
-		B56B1B8C21DD204E003ACA3A /* swepisodeiv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swepisodeiv.jpg; sourceTree = "<group>"; };
-		B56B1B8D21DD204E003ACA3A /* swepisodev.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swepisodev.jpg; sourceTree = "<group>"; };
-		B56B1B8E21DD204E003ACA3A /* inception.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inception.jpg; sourceTree = "<group>"; };
-		B56B1B8F21DD204E003ACA3A /* interestellar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = interestellar.jpg; sourceTree = "<group>"; };
-		B56B1B9A21DD214C003ACA3A /* actors_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = actors_info.json; sourceTree = "<group>"; };
-		B56B1BAB21DD290E003ACA3A /* nolan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nolan.jpg; path = ../../../../../.Trash/nolan.jpg; sourceTree = "<group>"; };
-		B56B1BC121DD3604003ACA3A /* macconaughey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macconaughey.jpg; sourceTree = "<group>"; };
-		B56B1BC221DD3604003ACA3A /* ford.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ford.jpg; sourceTree = "<group>"; };
-		B56B1BC321DD3604003ACA3A /* hamill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamill.jpg; sourceTree = "<group>"; };
-		B56B1BC421DD3604003ACA3A /* dicaprio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dicaprio.jpg; sourceTree = "<group>"; };
-		B56B1BC521DD3604003ACA3A /* fisher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fisher.jpg; sourceTree = "<group>"; };
-		B56B1BC621DD3605003ACA3A /* hathaway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hathaway.jpg; sourceTree = "<group>"; };
-		B56B1BC721DD3605003ACA3A /* page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = page.jpg; sourceTree = "<group>"; };
 		B572B40E21D6A9E100C48908 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		B5975F0521DD5EAF00A8842E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		B5975F1521DD616900A8842E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +109,8 @@
 		B53B296821C3CF3F00320059 /* Moviepedia */ = {
 			isa = PBXGroup;
 			children = (
-				B56B1B8321DD1806003ACA3A /* Assets */,
-				B56B1B7E21DD1424003ACA3A /* Data */,
+				B5975F1521DD616900A8842E /* Data */,
+				B5975F0521DD5EAF00A8842E /* Assets */,
 				B53B299721C3D41400320059 /* Model */,
 				B53B296921C3CF3F00320059 /* AppDelegate.swift */,
 				B53B296B21C3CF3F00320059 /* ViewController.swift */,
@@ -169,67 +144,11 @@
 			isa = PBXGroup;
 			children = (
 				B53B299921C3D46500320059 /* Film.swift */,
-				B53B299B21C3D48500320059 /* Person.swift */,
 				B53B299D21C3D49900320059 /* Director.swift */,
 				B53B299F21C3D4E300320059 /* Actor.swift */,
 				B572B40E21D6A9E100C48908 /* DataHandler.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		B56B1B7E21DD1424003ACA3A /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				B56B1B8121DD153E003ACA3A /* films_info.json */,
-				B56B1B8821DD1D00003ACA3A /* directors_info.json */,
-				B56B1B9A21DD214C003ACA3A /* actors_info.json */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		B56B1B8321DD1806003ACA3A /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				B56B1BC021DD35F7003ACA3A /* actors */,
-				B56B1B9921DD205E003ACA3A /* directors */,
-				B56B1B9821DD2054003ACA3A /* films */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		B56B1B9821DD2054003ACA3A /* films */ = {
-			isa = PBXGroup;
-			children = (
-				B56B1B8E21DD204E003ACA3A /* inception.jpg */,
-				B56B1B8F21DD204E003ACA3A /* interestellar.jpg */,
-				B56B1B8C21DD204E003ACA3A /* swepisodeiv.jpg */,
-				B56B1B8D21DD204E003ACA3A /* swepisodev.jpg */,
-			);
-			path = films;
-			sourceTree = "<group>";
-		};
-		B56B1B9921DD205E003ACA3A /* directors */ = {
-			isa = PBXGroup;
-			children = (
-				B56B1BAB21DD290E003ACA3A /* nolan.jpg */,
-				B56B1B8A21DD204E003ACA3A /* kershner.jpg */,
-				B56B1B8B21DD204E003ACA3A /* lucas.jpg */,
-			);
-			path = directors;
-			sourceTree = "<group>";
-		};
-		B56B1BC021DD35F7003ACA3A /* actors */ = {
-			isa = PBXGroup;
-			children = (
-				B56B1BC521DD3604003ACA3A /* fisher.jpg */,
-				B56B1BC421DD3604003ACA3A /* dicaprio.jpg */,
-				B56B1BC221DD3604003ACA3A /* ford.jpg */,
-				B56B1BC321DD3604003ACA3A /* hamill.jpg */,
-				B56B1BC621DD3605003ACA3A /* hathaway.jpg */,
-				B56B1BC121DD3604003ACA3A /* macconaughey.jpg */,
-				B56B1BC721DD3605003ACA3A /* page.jpg */,
-			);
-			path = actors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,19 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56B1BAC21DD290E003ACA3A /* nolan.jpg in Resources */,
-				B56B1B9321DD204E003ACA3A /* swepisodeiv.jpg in Resources */,
-				B56B1B9B21DD214C003ACA3A /* actors_info.json in Resources */,
+				B5975F0621DD5EAF00A8842E /* Assets in Resources */,
 				B53B297421C3CF4300320059 /* LaunchScreen.storyboard in Resources */,
-				B56B1B9221DD204E003ACA3A /* lucas.jpg in Resources */,
-				B56B1B9121DD204E003ACA3A /* kershner.jpg in Resources */,
-				B56B1B8221DD153E003ACA3A /* films_info.json in Resources */,
+				B5975F1621DD616900A8842E /* Data in Resources */,
 				B53B297121C3CF4300320059 /* Assets.xcassets in Resources */,
-				B56B1B9421DD204E003ACA3A /* swepisodev.jpg in Resources */,
-				B56B1B8921DD1D00003ACA3A /* directors_info.json in Resources */,
 				B53B296F21C3CF3F00320059 /* Main.storyboard in Resources */,
-				B56B1B9521DD204E003ACA3A /* inception.jpg in Resources */,
-				B56B1B9621DD204E003ACA3A /* interestellar.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +289,6 @@
 				B53B299A21C3D46500320059 /* Film.swift in Sources */,
 				B53B299E21C3D49900320059 /* Director.swift in Sources */,
 				B53B29A021C3D4E300320059 /* Actor.swift in Sources */,
-				B53B299C21C3D48500320059 /* Person.swift in Sources */,
 				B53B296A21C3CF3F00320059 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
