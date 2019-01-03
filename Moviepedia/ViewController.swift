@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         let dataHandler = DataHandler.getShared()
-        
+        print("2")
         //Parse data from JSON file
         let actors = parseDataFromJSON(resourceName: "actors_info")
         let directors = parseDataFromJSON(resourceName: "directors_info")
