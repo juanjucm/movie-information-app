@@ -9,15 +9,20 @@
 import Foundation
 
 class Film: NSObject {
-    
+    let id: Int
     let name: String
-    let duration: Int?
+    let year: String
+    let time: String
+    let country: String
     let director: Director
     let cast: [Actor]
     
-    init(id: Int, name:String, duration:Int?, director: Director, cast: [Actor]) {
+    init(id: Int, name:String, year:String, time:String, country:String, director: Director, cast: [Actor]) {
+        self.id = id
         self.name = name
-        self.duration = duration
+        self.year = year
+        self.time = time
+        self.country = country
         self.director = director
         self.cast = cast
     }

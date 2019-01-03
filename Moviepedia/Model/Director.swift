@@ -16,7 +16,7 @@ class Director {
     var photo:String?
     var filmography:[Film]
     
-    init(id: Int, name: String, surname: String, born_date: Date?, dead_date: Date?, photo:String?, filmography:[Film] = []) {
+    init(id: Int, name: String, born_date: Date?, dead_date: Date?, photo:String?, filmography:[Film] = []) {
         self.id = id
         self.name = name
         self.born_date = born_date

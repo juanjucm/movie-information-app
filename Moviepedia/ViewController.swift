@@ -14,18 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var dataHandler = DataHandler.getShared()
+        let dataHandler = DataHandler.getShared()
         
         //Parse data from JSON file
-        var actors = parseDataFromJSON(resourceName: "actors_info")
-        var directors = parseDataFromJSON(resourceName: "directors_info")
-        var films = parseDataFromJSON(resourceName: "films_info")[0]["cast"]
+        let actors = parseDataFromJSON(resourceName: "actors_info")
+        let directors = parseDataFromJSON(resourceName: "directors_info")
+        let films = parseDataFromJSON(resourceName: "films_info")
         
         //Use parsed data to create our model:
         do{
             try dataHandler.loadActorsFromDictionaries(actorsArray: actors)
-            //try dataHandler.loadDirectorsFromDictionaries(actorsArray: actors)
-            //try dataHandler.loadFilmsFromDictionaries(actorsArray: actors)
+            try dataHandler.loadDirectorsFromDictionaries(directorsArray: directors)
+            try dataHandler.loadFilmsFromDictionaries(filmsArray: films)
         }catch MyError.runtimeError(let errorMessage) {
             print(errorMessage)
         }catch {
