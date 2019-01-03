@@ -8,14 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class FilmsViewController: UITableViewController {
+    let dataHandler = DataHandler.getShared()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a
         
-        let dataHandler = DataHandler.getShared()
-        print("2")
         //Parse data from JSON file
         let actors = parseDataFromJSON(resourceName: "actors_info")
         let directors = parseDataFromJSON(resourceName: "directors_info")
@@ -32,6 +31,21 @@ class ViewController: UIViewController {
             print("")
         }
     }
+}
 
+extension FilmsViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataHandler.films.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FilmCell", for:indexPath)
+        
+        let film =  dataHandler.films[indexPath.row]
+        cell.textLabel?.text = film.name
+        cell.detailTextLabel?.text = film.director.name
+        return cell
+    }
+    
 }
 

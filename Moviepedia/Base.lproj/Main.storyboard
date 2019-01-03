@@ -8,21 +8,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Directors-->
         <scene sceneID="dgd-si-VGk">
             <objects>
-                <tableViewController id="Kzk-pE-eZn" sceneMemberID="viewController">
+                <tableViewController id="Kzk-pE-eZn" customClass="DirectorsViewController" customModule="Moviepedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9UL-wJ-NYy">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Yew-rb-SAR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DirectorCell" textLabel="HHn-Dh-WcT" detailTextLabel="e8J-ti-Hab" style="IBUITableViewCellStyleSubtitle" id="Yew-rb-SAR">
                                 <rect key="frame" x="0.0" y="28" width="1024" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yew-rb-SAR" id="QRC-Kc-7v5">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="986" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HHn-Dh-WcT">
+                                            <rect key="frame" x="20" y="9" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e8J-ti-Hab">
+                                            <rect key="frame" x="20" y="29.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -31,27 +47,43 @@
                             <outlet property="delegate" destination="Kzk-pE-eZn" id="LN8-cP-sZ3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Hkf-lE-r36"/>
+                    <navigationItem key="navigationItem" title="Directors" id="Hkf-lE-r36"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otT-zp-d5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="286" y="640"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Actors-->
         <scene sceneID="Eos-3D-Vuh">
             <objects>
-                <tableViewController id="8El-1f-0Q3" sceneMemberID="viewController">
+                <tableViewController id="8El-1f-0Q3" customClass="ActorsViewController" customModule="Moviepedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uoi-3W-SwU">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JXY-rr-RKE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ActorCell" textLabel="V2Q-7V-r50" detailTextLabel="ioR-s9-Wwy" style="IBUITableViewCellStyleSubtitle" id="JXY-rr-RKE">
                                 <rect key="frame" x="0.0" y="28" width="1024" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JXY-rr-RKE" id="qkw-mU-33V">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="986" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V2Q-7V-r50">
+                                            <rect key="frame" x="20" y="9" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ioR-s9-Wwy">
+                                            <rect key="frame" x="20" y="29.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -60,7 +92,7 @@
                             <outlet property="delegate" destination="8El-1f-0Q3" id="tXs-Jt-etx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="UY3-hX-WeS"/>
+                    <navigationItem key="navigationItem" title="Actors" id="UY3-hX-WeS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zcr-uY-ljD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,21 +122,37 @@
             </objects>
             <point key="canvasLocation" x="-1196" y="47"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Films-->
         <scene sceneID="lkh-il-uda">
             <objects>
-                <tableViewController id="JOA-5v-UGw" sceneMemberID="viewController">
+                <tableViewController id="JOA-5v-UGw" customClass="FilmsViewController" customModule="Moviepedia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1Mi-cM-8hm">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vly-ik-FlB">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FilmCell" textLabel="RSE-qJ-K0I" detailTextLabel="hAK-w7-oca" style="IBUITableViewCellStyleSubtitle" id="vly-ik-FlB">
                                 <rect key="frame" x="0.0" y="28" width="1024" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vly-ik-FlB" id="3Mf-6U-3U9">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="51.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="986" height="51.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RSE-qJ-K0I">
+                                            <rect key="frame" x="20" y="9" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hAK-w7-oca">
+                                            <rect key="frame" x="20" y="29.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -113,7 +161,7 @@
                             <outlet property="delegate" destination="JOA-5v-UGw" id="22m-ZX-PGH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9WX-PX-8xS"/>
+                    <navigationItem key="navigationItem" title="Films" id="9WX-PX-8xS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA0-pb-y21" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
