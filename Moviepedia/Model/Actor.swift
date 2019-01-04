@@ -11,18 +11,32 @@ import Foundation
 class Actor {
     let id: Int
     let name: String
-    let born_date: Date?
-    let dead_date: Date?
-    var photo:String?
+    let birthDate: Date
+    let deadDate: Date?
+    var photo:String
     var filmography:[Film]
+    var biography:String
     
-    init(id: Int, name: String, born_date: Date?, dead_date: Date?, photo:String?, filmography:[Film] = []) {
+    private let constants = Constants()
+    
+    var age: String {
+        if self.deadDate == nil {
+            let now = Date()
+            let calcAge = constants.calendar.dateComponents([.year], from: self.birthDate, to:now)
+            let age = calcAge.year
+            return String(age!)
+        }
+        return "1000"
+    }
+    
+    init(id: Int, name: String, birthDate: Date, deadDate: Date?, photo:String, filmography:[Film] = [], biography: String = "") {
         self.id = id
         self.name = name
-        self.born_date = born_date
-        self.dead_date = dead_date
+        self.birthDate = birthDate
+        self.deadDate = deadDate
         self.filmography = filmography
         self.photo = photo
+        self.biography = biography
     }
     
     func addFilm(film: Film){

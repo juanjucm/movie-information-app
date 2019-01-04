@@ -11,3 +11,19 @@ import Foundation
 enum MyError: Error{
     case runtimeError(String)
 }
+
+struct Constants {
+    //date constants
+    let formatter = DateFormatter()
+    let calendar = Calendar(identifier: .gregorian)
+    
+    init() {
+        formatter.dateFormat = "dd/MM/yyyy"
+    }
+}
+
+
+
+
+
+

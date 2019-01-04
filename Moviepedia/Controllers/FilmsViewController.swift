@@ -10,6 +10,7 @@ import UIKit
 
 class FilmsViewController: UITableViewController {
     let dataHandler = DataHandler.getShared()
+    let constants = Constants()
     
     override func viewDidLoad() {
         super.viewDidLoad()

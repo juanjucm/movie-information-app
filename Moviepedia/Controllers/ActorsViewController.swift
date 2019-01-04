@@ -23,7 +23,11 @@ extension ActorsViewController {
         
         let actor =  dataHandler.actors[indexPath.row]
         cell.textLabel?.text = actor.name
-        cell.detailTextLabel?.text = actor.name
+        
+        if actor.age == "1000"{
+            cell.detailTextLabel?.text = actor.age + "years old" + "(\(actor.birthDate) - \(actor.deadDate!))"
+        }
+        cell.detailTextLabel?.text = actor.age + "years old" + "(\(actor.birthDate) - )"
         return cell
     }
     

@@ -23,7 +23,11 @@ extension DirectorsViewController {
         
         let director =  dataHandler.directors[indexPath.row]
         cell.textLabel?.text = director.name
-        cell.detailTextLabel?.text = director.name
+        
+        if director.age == "1000"{
+            cell.detailTextLabel?.text = director.age + "years old" + "(\(director.birthDate) - \(director.deadDate!))"
+        }
+        cell.detailTextLabel?.text = director.age + " years old " + " (\(director.birthDate) - )"
         return cell
     }
     

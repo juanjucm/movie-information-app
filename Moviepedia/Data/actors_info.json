@@ -3,49 +3,49 @@
         {
             "id": 0,
             "name": "Leonardo DiCaprio",
-            "born_date": "11/11/1974",
+            "birth_date": "11/11/1974",
             "dead_date": "",
             "photo_name": "dicaprio"
         },
         {
             "id": 1,
             "name": "Ellen Page",
-            "born_date": "21/02/1987",
+            "birth_date": "21/02/1987",
             "dead_date": "",
             "photo_name": "page"
         },
         {
             "id": 2,
             "name": "Matthew McConaughey",
-            "born_date": "04/11/1969",
+            "birth_date": "04/11/1969",
             "dead_date": "",
             "photo_name": "mcconaughey"
         },
         {
             "id": 3,
             "name": "Anne Hathaway",
-            "born_date": "12/11/1982",
+            "birth_date": "12/11/1982",
             "dead_date": "",
             "photo_name": "hathaway"
         },
         {
             "id": 4,
             "name": "Mark Hammill",
-            "born_date": "23/09/1951",
+            "birth_date": "23/09/1951",
             "dead_date": "",
             "photo_name": "hammill"
         },
         {
             "id": 5,
             "name": "Carrie Fisher",
-            "born_date": "21/10/1956",
+            "birth_date": "21/10/1956",
             "dead_date": "27/12/2016",
             "photo_name": "fisher"
         },
         {
             "id": 6,
             "name": "Harrison Ford",
-            "born_date": "13/07/1942",
+            "birth_date": "13/07/1942",
             "dead_date": "",
             "photo_name": "ford"
         }

@@ -13,13 +13,14 @@ final class DataHandler {
     var actors = [Actor]()
     var directors = [Director]()
     
-    let formatter = DateFormatter()
     
     //Unique instance for singleton pattern.
     private static let shared = DataHandler()
     
+    //Get constants struct
+    let constants = Constants()
+    
     private init(){
-        self.formatter.dateFormat = "dd/MM/yyyy"
     }
     
     //Function to get unique class instance
@@ -32,11 +33,11 @@ final class DataHandler {
         for actor in actorsArray {
             guard let newId = actor["id"] as? Int else{throw MyError.runtimeError("Parsing Error.")}
             guard let newName = actor["name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
-            guard let newBD = actor["born_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newBD = actor["birth_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newDD = actor["dead_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newPhoto = actor["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             
-            let newActor = Actor(id: newId, name: newName, born_date: self.formatter.date(from: newBD), dead_date: self.formatter.date(from: newDD), photo: newPhoto)
+            let newActor = Actor(id: newId, name: newName, birthDate: self.constants.formatter.date(from: newBD)!, deadDate: self.constants.formatter.date(from: newDD), photo: newPhoto)
             actors.append(newActor)
         }
     }
@@ -46,11 +47,11 @@ final class DataHandler {
         for director in directorsArray {
             guard let newId = director["id"] as? Int else{throw MyError.runtimeError("Parsing Error.")}
             guard let newName = director["name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
-            guard let newBD = director["born_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newBD = director["birth_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newDD = director["dead_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newPhoto = director["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             
-            let newDirector = Director(id: newId, name: newName, born_date: self.formatter.date(from: newBD), dead_date: self.formatter.date(from: newDD), photo: newPhoto)
+            let newDirector = Director(id: newId, name: newName, birthDate: self.constants.formatter.date(from: newBD)!, deadDate: self.constants.formatter.date(from: newDD), photo: newPhoto)
             directors.append(newDirector)
         }
     }

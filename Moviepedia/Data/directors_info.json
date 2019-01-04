@@ -3,21 +3,21 @@
         {
             "id": 0,
             "name": "Christopher Nolan",
-            "born_date": "30/07/1970",
+            "birth_date": "30/07/1970",
             "dead_date": "",
             "photo_name": "nolan"
         },
         {
             "id": 1,
             "name": "Irvin Kershner",
-            "born_date": "29/04/1923",
+            "birth_date": "29/04/1923",
             "dead_date": "27/11/2010",
             "photo_name": "kershner"
         },
         {
             "id": 3,
             "name": "George Lucas",
-            "born_date": "14/05/1944",
+            "birth_date": "14/05/1944",
             "dead_date": "",
             "photo_name": "lucas"
         }
