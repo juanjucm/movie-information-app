@@ -8,6 +8,12 @@
 
 import UIKit
 
+class FilmsTableViewCell: UITableViewCell{
+    @IBOutlet weak var filmNameLabel: UILabel!
+    @IBOutlet weak var filmAgeLabel: UILabel!
+    @IBOutlet weak var filmImage: UIImageView!
+}
+
 class FilmsViewController: UITableViewController {
     let dataHandler = DataHandler.getShared()
     let constants = Constants()
@@ -32,9 +38,7 @@ class FilmsViewController: UITableViewController {
             print("")
         }
     }
-}
-
-extension FilmsViewController {
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataHandler.films.count
     }
@@ -47,6 +51,5 @@ extension FilmsViewController {
         cell.detailTextLabel?.text = film.director.name
         return cell
     }
-    
 }
 

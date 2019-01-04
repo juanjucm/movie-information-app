@@ -26,7 +26,9 @@ class Director {
             let age = calcAge.year
             return String(age!)
         }
-        return "1000"
+        let calcAge = constants.calendar.dateComponents([.year], from: self.birthDate, to:self.deadDate!)
+        let age = calcAge.year
+        return String(age!)
     }
     
     init(id: Int, name: String, birthDate: Date, deadDate: Date?, photo:String, filmography:[Film] = [], biography: String = "") {

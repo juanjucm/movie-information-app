@@ -83,8 +83,15 @@ final class DataHandler {
                     }
                 }
             }
+            
             let newFilm = Film(id: newId, name: newName, year: newYear, time: newTime, country: newCountry, director: director!, cast: castList)
             self.films.append(newFilm)
+            
+            //Include the film in actors/director's filmography
+            director?.addFilm(film: newFilm)
+            for c in castList{
+                c.addFilm(film: newFilm)
+            }
         }
     }
 }

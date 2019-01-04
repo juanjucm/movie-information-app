@@ -22,7 +22,6 @@
 		B563741421DE64DC002C7860 /* AuxFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563741321DE64DC002C7860 /* AuxFunctions.swift */; };
 		B563741621DE712E002C7860 /* Costants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563741521DE712E002C7860 /* Costants.swift */; };
 		B572B40F21D6A9E100C48908 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572B40E21D6A9E100C48908 /* DataHandler.swift */; };
-		B5975F0621DD5EAF00A8842E /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = B5975F0521DD5EAF00A8842E /* Assets */; };
 		B5975F1621DD616900A8842E /* Data in Resources */ = {isa = PBXBuildFile; fileRef = B5975F1521DD616900A8842E /* Data */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		B563741321DE64DC002C7860 /* AuxFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxFunctions.swift; sourceTree = "<group>"; };
 		B563741521DE712E002C7860 /* Costants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Costants.swift; sourceTree = "<group>"; };
 		B572B40E21D6A9E100C48908 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
-		B5975F0521DD5EAF00A8842E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		B5975F1521DD616900A8842E /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +128,6 @@
 				B5023AE321DEBA38006CA64D /* Controllers */,
 				B563741221DE64AE002C7860 /* Helpers */,
 				B5975F1521DD616900A8842E /* Data */,
-				B5975F0521DD5EAF00A8842E /* Assets */,
 				B53B299721C3D41400320059 /* Model */,
 				B53B296921C3CF3F00320059 /* AppDelegate.swift */,
 				B53B296D21C3CF3F00320059 /* Main.storyboard */,
@@ -283,7 +280,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5975F0621DD5EAF00A8842E /* Assets in Resources */,
 				B53B297421C3CF4300320059 /* LaunchScreen.storyboard in Resources */,
 				B5975F1621DD616900A8842E /* Data in Resources */,
 				B53B297121C3CF4300320059 /* Assets.xcassets in Resources */,

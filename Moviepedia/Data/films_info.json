@@ -10,7 +10,7 @@
             "cast": ["Leonardo DiCaprio",
                      "Ellen Page"
                     ],
-            "photo_name": "inception"
+            "photo_name": "inception.jpg"
         },
         {
             "id": 1,
@@ -22,7 +22,7 @@
             "cast": ["Matthew McConaughey",
                      "Anne Hathaway"
             ],
-            "photo_name": "interestellar"
+            "photo_name": "interestellar.jpg"
         },
         {
             "id": 2,
@@ -35,7 +35,7 @@
                      "Harrison Ford",
                      "Carrie Fisher",
             ],
-            "photo_name": "swepisodev"
+            "photo_name": "swepisodev.jpg"
         },
         {
             "id": 3,
@@ -48,7 +48,7 @@
                      "Harrison Ford",
                      "Carrie Fisher",
             ],
-            "photo_name": "swepisodeiv"
+            "photo_name": "swepisodeiv.jpg"
         }
     ]
 }
