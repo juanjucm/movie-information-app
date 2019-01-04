@@ -16,6 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //Parse data from JSON file
+        let dataHandler = DataHandler.getShared()
+        let actors = parseDataFromJSON(resourceName: "actors_info")
+        let directors = parseDataFromJSON(resourceName: "directors_info")
+        let films = parseDataFromJSON(resourceName: "films_info")
+        
+        //Use parsed data to create our model:
+        do{
+            try dataHandler.loadActorsFromDictionaries(actorsArray: actors)
+            try dataHandler.loadDirectorsFromDictionaries(directorsArray: directors)
+            try dataHandler.loadFilmsFromDictionaries(filmsArray: films)
+        }catch MyError.runtimeError(let errorMessage) {
+            print(errorMessage)
+        }catch {
+            print("")
+        }
         return true
     }
 

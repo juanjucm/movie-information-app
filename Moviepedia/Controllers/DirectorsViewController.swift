@@ -9,9 +9,10 @@
 import UIKit
 
 class DirectorsTableViewCell: UITableViewCell{
-    @IBOutlet weak var directorNameLabel: UILabel!
-    @IBOutlet weak var directorAgeLabel: UILabel!
+
     @IBOutlet weak var directorImage: UIImageView!
+    @IBOutlet weak var directorAgeLabel: UILabel!
+    @IBOutlet weak var directorNameLabel: UILabel!
 }
 
 class DirectorsViewController: UITableViewController {
@@ -23,15 +24,16 @@ class DirectorsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DirectorCell", for:indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DirectorCell", for:indexPath) as! DirectorsTableViewCell
         let director =  dataHandler.directors[indexPath.row]
-        cell.textLabel?.text = director.name
+        
+        cell.directorNameLabel?.text = director.name
+        cell.directorImage?.image = UIImage(named: director.photo)
         
         if director.deadDate != nil{
-            cell.detailTextLabel?.text = director.age + " years old" + " (\(constants.formatter.string(from:director.birthDate)) - \(constants.formatter.string(from: director.deadDate!))"
+            cell.directorAgeLabel?.text = director.age + " years old" + " (\(constants.formatter.string(from:director.birthDate)) - \(constants.formatter.string(from: director.deadDate!))"
         }
-        cell.detailTextLabel?.text = director.age + " years old " + " (\(constants.formatter.string(from:director.birthDate)) - )"
+        cell.directorAgeLabel?.text = director.age + " years old " + " (\(constants.formatter.string(from:director.birthDate)) - )"
         return cell
     }
     
