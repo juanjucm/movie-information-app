@@ -9,7 +9,6 @@
 import UIKit
 
 class ActorsTableViewCell: UITableViewCell{
-
     @IBOutlet weak var actorImage: UIImageView!
     @IBOutlet weak var actorAgeLabel: UILabel!
     @IBOutlet weak var actorNameLabel: UILabel!
@@ -18,6 +17,7 @@ class ActorsTableViewCell: UITableViewCell{
 class ActorsViewController: UITableViewController {
     let constants = Constants()
     let dataHandler = DataHandler.getShared()
+    var selectedActor: Actor?
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataHandler.actors.count
@@ -35,5 +35,20 @@ class ActorsViewController: UITableViewController {
         }
         cell.actorAgeLabel?.text = actor.age + " years old" + " (\(constants.formatter.string(from: actor.birthDate)) - )"
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        selectedActor = dataHandler.actors[indexPath.row]
+        performSegue(withIdentifier: "actor_detail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "actor_detail" {
+            if let destinationVC = segue.destination as? PersonDetailViewController {
+                destinationVC.actor = selectedActor
+                destinationVC.director = nil
+            }
+        }
     }
 }

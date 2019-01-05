@@ -9,7 +9,6 @@
 import UIKit
 
 class DirectorsTableViewCell: UITableViewCell{
-
     @IBOutlet weak var directorImage: UIImageView!
     @IBOutlet weak var directorAgeLabel: UILabel!
     @IBOutlet weak var directorNameLabel: UILabel!
@@ -18,6 +17,7 @@ class DirectorsTableViewCell: UITableViewCell{
 class DirectorsViewController: UITableViewController {
     let constants = Constants()
     let dataHandler = DataHandler.getShared()
+    var selectedDirector: Director?
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataHandler.directors.count
@@ -35,6 +35,20 @@ class DirectorsViewController: UITableViewController {
         }
         cell.directorAgeLabel?.text = director.age + " years old " + " (\(constants.formatter.string(from:director.birthDate)) - )"
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedDirector = dataHandler.directors[indexPath.row]
+        performSegue(withIdentifier: "director_detail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "director_detail" {
+            if let destinationVC = segue.destination as? PersonDetailViewController {
+                destinationVC.director = selectedDirector
+                destinationVC.actor = nil
+            }
+        }
     }
     
 }

@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DirectorCell" rowHeight="150" id="Yew-rb-SAR" customClass="DirectorsTableViewCell" customModule="Moviepedia" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DirectorCell" rowHeight="150" id="Yew-rb-SAR" customClass="DirectorsTableViewCell" customModule="Moviepedia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="1024" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yew-rb-SAR" id="QRC-Kc-7v5">
-                                    <rect key="frame" x="0.0" y="0.0" width="986" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wha-pe-Sm9">
@@ -58,6 +59,7 @@
                                     <outlet property="directorAgeLabel" destination="uOT-9l-iqs" id="46C-9q-GcO"/>
                                     <outlet property="directorImage" destination="wha-pe-Sm9" id="z84-sa-xyM"/>
                                     <outlet property="directorNameLabel" destination="WWA-zV-9py" id="WQG-jn-aSr"/>
+                                    <segue destination="Tea-lj-WLI" kind="show" identifier="director_detail" trigger="accessoryAction" id="6Pd-6x-yF9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -71,6 +73,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otT-zp-d5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="285.9375" y="639.97071742313324"/>
+        </scene>
+        <!--Person Detail View Controller-->
+        <scene sceneID="wcB-6f-swl">
+            <objects>
+                <viewController id="Tea-lj-WLI" customClass="PersonDetailViewController" customModule="Moviepedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UbA-Og-oOf" customClass="Perso" customModule="Moviepedia">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="72A-JT-tbK">
+                                <rect key="frame" x="350" y="178" width="325" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="0Sa-pe-gZR"/>
+                                    <constraint firstAttribute="height" constant="270" id="aGx-8e-A4S"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTO-do-BF0">
+                                <rect key="frame" x="491" y="536" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="72A-JT-tbK" firstAttribute="top" secondItem="W5E-C9-Oi7" secondAttribute="top" constant="108" id="0hf-x3-ujh"/>
+                            <constraint firstItem="qTO-do-BF0" firstAttribute="leading" secondItem="W5E-C9-Oi7" secondAttribute="leading" constant="491" id="0wb-22-7yp"/>
+                            <constraint firstItem="72A-JT-tbK" firstAttribute="leading" secondItem="W5E-C9-Oi7" secondAttribute="leading" constant="350" id="ENG-Fo-sIJ"/>
+                            <constraint firstItem="W5E-C9-Oi7" firstAttribute="trailing" secondItem="72A-JT-tbK" secondAttribute="trailing" constant="349" id="a0e-nc-oiX"/>
+                            <constraint firstItem="qTO-do-BF0" firstAttribute="top" secondItem="72A-JT-tbK" secondAttribute="bottom" constant="88" id="oSw-yu-Neb"/>
+                            <constraint firstItem="W5E-C9-Oi7" firstAttribute="trailing" secondItem="qTO-do-BF0" secondAttribute="trailing" constant="491" id="qDP-HX-DQs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W5E-C9-Oi7"/>
+                    </view>
+                    <connections>
+                        <outlet property="personImage" destination="72A-JT-tbK" id="UeX-PG-agC"/>
+                        <outlet property="personNameLabel" destination="qTO-do-BF0" id="w8A-H6-ECB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1h-88-CIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2018.5546874999998" y="-7.0278184480234254"/>
         </scene>
         <!--Actors-->
         <scene sceneID="Eos-3D-Vuh">
@@ -122,6 +166,7 @@
                                     <outlet property="actorAgeLabel" destination="peK-mD-ifv" id="dgj-gm-mh8"/>
                                     <outlet property="actorImage" destination="4YV-fa-obu" id="9UQ-l5-f0l"/>
                                     <outlet property="actorNameLabel" destination="gEN-NP-cHg" id="Kxf-fe-mOd"/>
+                                    <segue destination="Tea-lj-WLI" kind="show" identifier="actor_detail" trigger="accessoryAction" id="A96-W2-N8g"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -169,11 +214,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FilmCell" rowHeight="150" id="vly-ik-FlB" customClass="FilmsTableViewCell" customModule="Moviepedia" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilmCell" rowHeight="150" id="vly-ik-FlB" customClass="FilmsTableViewCell" customModule="Moviepedia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="1024" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vly-ik-FlB" id="3Mf-6U-3U9">
-                                    <rect key="frame" x="0.0" y="0.0" width="986" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVP-Dk-CwO">
@@ -302,4 +347,7 @@
             <point key="canvasLocation" x="-381" y="-761"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A96-W2-N8g"/>
+    </inferredMetricsTieBreakers>
 </document>
