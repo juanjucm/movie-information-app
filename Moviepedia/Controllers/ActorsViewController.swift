@@ -12,6 +12,7 @@ class ActorsTableViewCell: UITableViewCell{
     @IBOutlet weak var actorImage: UIImageView!
     @IBOutlet weak var actorAgeLabel: UILabel!
     @IBOutlet weak var actorNameLabel: UILabel!
+    @IBOutlet weak var actorImageFrame: UIView!
 }
 
 class ActorsViewController: UITableViewController {
@@ -29,6 +30,15 @@ class ActorsViewController: UITableViewController {
         
         cell.actorNameLabel?.text = actor.name
         cell.actorImage?.image = UIImage(named: actor.photo)
+        cell.actorImage?.layer.cornerRadius = 10.0
+        
+        cell.actorImageFrame.clipsToBounds = false
+        cell.actorImageFrame.layer.shadowColor = UIColor.black.cgColor
+        cell.actorImageFrame.layer.shadowOpacity = 1
+        cell.actorImageFrame.layer.shadowOffset = CGSize.zero
+        cell.actorImageFrame.layer.shadowRadius = 5
+        cell.actorImageFrame.layer.shadowPath = UIBezierPath(roundedRect: cell.actorImageFrame.bounds, cornerRadius: 5).cgPath
+        cell.actorImageFrame.layer.cornerRadius = cell.actorImage.layer.cornerRadius
         
         if actor.deadDate != nil{
             cell.actorAgeLabel?.text = actor.age + " years old" + " (\(constants.formatter.string(from: actor.birthDate)) - \(constants.formatter.string(from:actor.deadDate!)))"

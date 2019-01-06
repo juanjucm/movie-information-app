@@ -12,6 +12,7 @@ class DirectorsTableViewCell: UITableViewCell{
     @IBOutlet weak var directorImage: UIImageView!
     @IBOutlet weak var directorAgeLabel: UILabel!
     @IBOutlet weak var directorNameLabel: UILabel!
+    @IBOutlet weak var directorImageFrame: UIView!
 }
 
 class DirectorsViewController: UITableViewController {
@@ -29,6 +30,16 @@ class DirectorsViewController: UITableViewController {
         
         cell.directorNameLabel?.text = director.name
         cell.directorImage?.image = UIImage(named: director.photo)
+        cell.directorImage?.layer.cornerRadius = 10.0
+        
+        cell.directorImageFrame.clipsToBounds = false
+        cell.directorImageFrame.layer.shadowColor = UIColor.black.cgColor
+        cell.directorImageFrame.layer.shadowOpacity = 1
+        cell.directorImageFrame.layer.shadowOffset = CGSize.zero
+        cell.directorImageFrame.layer.shadowRadius = 5
+        cell.directorImageFrame.layer.shadowPath = UIBezierPath(roundedRect: cell.directorImageFrame.bounds, cornerRadius: 5).cgPath
+        cell.directorImageFrame.layer.cornerRadius = cell.directorImage.layer.cornerRadius
+        
         
         if director.deadDate != nil{
             cell.directorAgeLabel?.text = director.age + " years old" + " (\(constants.formatter.string(from:director.birthDate)) - \(constants.formatter.string(from: director.deadDate!))"
