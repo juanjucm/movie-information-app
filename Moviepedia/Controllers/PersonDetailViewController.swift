@@ -8,7 +8,13 @@
 
 import UIKit
 
-class PersonDetailViewController: UIViewController{
+class PersonDetailTableViewCell: UITableViewCell{
+    @IBOutlet weak var filmNameLabel: UILabel!
+    @IBOutlet weak var filmImage: UIImageView!
+    @IBOutlet weak var filmImageFrame: UIView!
+}
+
+class PersonDetailViewController: UITableViewController{
     let constants = Constants()
     
     var actor: Actor?
@@ -71,5 +77,37 @@ class PersonDetailViewController: UIViewController{
             self.personFrame?.layer.shadowPath = UIBezierPath(roundedRect: self.personFrame.bounds, cornerRadius: 4).cgPath
             self.personFrame.layer.cornerRadius = self.personImage.layer.cornerRadius
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if actor != nil {
+            return actor!.filmography.count
+        }
+        return director!.filmography.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PersonDetailCell", for:indexPath) as! PersonDetailTableViewCell
+        
+        var film: Film?
+        if actor != nil {
+            film =  actor!.filmography[indexPath.row]
+        }else{
+            film =  director!.filmography[indexPath.row]
+        }
+        
+        cell.filmNameLabel?.text = film!.name
+        cell.filmImage?.image = UIImage(named: film!.photo)
+        cell.filmImage?.layer.cornerRadius = 10.0
+        
+        cell.filmImageFrame.clipsToBounds = false
+        cell.filmImageFrame.layer.shadowColor = UIColor.black.cgColor
+        cell.filmImageFrame.layer.shadowOpacity = 1
+        cell.filmImageFrame.layer.shadowOffset = CGSize.zero
+        cell.filmImageFrame.layer.shadowRadius = 5
+        cell.filmImageFrame.layer.shadowPath = UIBezierPath(roundedRect: cell.filmImageFrame.bounds, cornerRadius: 5).cgPath
+        cell.filmImageFrame.layer.cornerRadius = cell.filmImage.layer.cornerRadius
+        
+        return cell
     }
 }

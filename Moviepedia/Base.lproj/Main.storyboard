@@ -94,6 +94,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs5-jx-6sF">
+                                <rect key="frame" x="54" y="505" width="747" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="747" id="7tg-Xy-OBD"/>
+                                    <constraint firstAttribute="height" constant="203" id="r2v-UF-KlY"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsv-ON-y8z">
                                 <rect key="frame" x="54" y="190" width="415" height="270"/>
                                 <subviews>
@@ -171,22 +187,62 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs5-jx-6sF">
-                                <rect key="frame" x="54" y="505" width="747" height="203"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="747" id="7tg-Xy-OBD"/>
-                                    <constraint firstAttribute="height" constant="203" id="r2v-UF-KlY"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9BJ-ri-gRy">
+                                <rect key="frame" x="54" y="753" width="621" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonDetailCell" rowHeight="113" id="w5h-x0-cUm" customClass="PersonDetailTableViewCell" customModule="Moviepedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="621" height="113"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w5h-x0-cUm" id="t3X-9N-7gA">
+                                            <rect key="frame" x="0.0" y="0.0" width="621" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1x-Gl-BvQ">
+                                                    <rect key="frame" x="15" y="11" width="128" height="90"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-eg-Kxg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="90"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="128" id="jjs-k7-dP4"/>
+                                                                <constraint firstAttribute="height" constant="90" id="vDX-tM-5h5"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="2cd-eg-Kxg" secondAttribute="trailing" id="DbQ-o2-oAc"/>
+                                                        <constraint firstAttribute="width" constant="128" id="Meo-hG-4C6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2cd-eg-Kxg" secondAttribute="bottom" id="PaI-fs-qzM"/>
+                                                        <constraint firstItem="2cd-eg-Kxg" firstAttribute="top" secondItem="c1x-Gl-BvQ" secondAttribute="top" id="QGQ-ob-i7c"/>
+                                                        <constraint firstItem="2cd-eg-Kxg" firstAttribute="leading" secondItem="c1x-Gl-BvQ" secondAttribute="leading" id="YHv-vu-Slw"/>
+                                                        <constraint firstAttribute="height" constant="90" id="hJO-Z7-mwj"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgc-l0-euq">
+                                                    <rect key="frame" x="177" y="41" width="59.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Hgc-l0-euq" firstAttribute="top" secondItem="t3X-9N-7gA" secondAttribute="topMargin" constant="30" id="4mn-EC-Zvg"/>
+                                                <constraint firstItem="Hgc-l0-euq" firstAttribute="leading" secondItem="c1x-Gl-BvQ" secondAttribute="trailing" constant="34" id="chb-qw-U9f"/>
+                                                <constraint firstItem="c1x-Gl-BvQ" firstAttribute="top" secondItem="t3X-9N-7gA" secondAttribute="topMargin" id="hBt-Bv-FDD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="c1x-Gl-BvQ" secondAttribute="bottom" constant="1" id="sJK-4v-23F"/>
+                                                <constraint firstItem="c1x-Gl-BvQ" firstAttribute="leading" secondItem="t3X-9N-7gA" secondAttribute="leadingMargin" id="xXE-Bj-1on"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="filmImage" destination="2cd-eg-Kxg" id="nlv-zu-fkM"/>
+                                            <outlet property="filmImageFrame" destination="c1x-Gl-BvQ" id="cqW-ZH-znC"/>
+                                            <outlet property="filmNameLabel" destination="Hgc-l0-euq" id="K0F-ft-qXP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>

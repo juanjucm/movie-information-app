@@ -51,7 +51,7 @@ class ActorsViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "actor_detail" {
             if let destinationVC = segue.destination as? PersonDetailViewController {
-                destinationVC.actor = selectedActor
+                destinationVC.actor = self.selectedActor
                 destinationVC.director = nil
             }
         }

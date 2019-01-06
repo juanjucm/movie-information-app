@@ -50,7 +50,7 @@ class DirectorsViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "director_detail" {
             if let destinationVC = segue.destination as? PersonDetailViewController {
-                destinationVC.director = selectedDirector
+                destinationVC.director = self.selectedDirector
                 destinationVC.actor = nil
             }
         }
