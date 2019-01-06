@@ -10,7 +10,6 @@ import UIKit
 
 class ActorsTableViewCell: UITableViewCell{
     @IBOutlet weak var actorImage: UIImageView!
-    @IBOutlet weak var actorAgeLabel: UILabel!
     @IBOutlet weak var actorNameLabel: UILabel!
     @IBOutlet weak var actorImageFrame: UIView!
 }
@@ -40,10 +39,10 @@ class ActorsViewController: UITableViewController {
         cell.actorImageFrame.layer.shadowPath = UIBezierPath(roundedRect: cell.actorImageFrame.bounds, cornerRadius: 5).cgPath
         cell.actorImageFrame.layer.cornerRadius = cell.actorImage.layer.cornerRadius
         
-        if actor.deadDate != nil{
+        /*if actor.deadDate != nil{
             cell.actorAgeLabel?.text = actor.age + " years old" + " (\(constants.formatter.string(from: actor.birthDate)) - \(constants.formatter.string(from:actor.deadDate!)))"
         }
-        cell.actorAgeLabel?.text = actor.age + " years old" + " (\(constants.formatter.string(from: actor.birthDate)) - )"
+        cell.actorAgeLabel?.text = actor.age + " years old" + " (\(constants.formatter.string(from: actor.birthDate)) - )"*/
         return cell
     }
     

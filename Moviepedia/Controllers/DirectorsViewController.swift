@@ -10,7 +10,6 @@ import UIKit
 
 class DirectorsTableViewCell: UITableViewCell{
     @IBOutlet weak var directorImage: UIImageView!
-    @IBOutlet weak var directorAgeLabel: UILabel!
     @IBOutlet weak var directorNameLabel: UILabel!
     @IBOutlet weak var directorImageFrame: UIView!
 }
@@ -41,10 +40,10 @@ class DirectorsViewController: UITableViewController {
         cell.directorImageFrame.layer.cornerRadius = cell.directorImage.layer.cornerRadius
         
         
-        if director.deadDate != nil{
+        /*if director.deadDate != nil{
             cell.directorAgeLabel?.text = director.age + " years old" + " (\(constants.formatter.string(from:director.birthDate)) - \(constants.formatter.string(from: director.deadDate!))"
         }
-        cell.directorAgeLabel?.text = director.age + " years old " + " (\(constants.formatter.string(from:director.birthDate)) - )"
+        cell.directorAgeLabel?.text = director.age + " years old " + " (\(constants.formatter.string(from:director.birthDate)) - )"*/
         return cell
     }
     
