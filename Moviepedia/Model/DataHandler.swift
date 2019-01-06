@@ -36,8 +36,9 @@ final class DataHandler {
             guard let newBD = actor["birth_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newDD = actor["dead_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newPhoto = actor["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newBio = actor["biography"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             
-            let newActor = Actor(id: newId, name: newName, birthDate: self.constants.formatter.date(from: newBD)!, deadDate: self.constants.formatter.date(from: newDD), photo: newPhoto)
+            let newActor = Actor(id: newId, name: newName, birthDate: self.constants.formatter.date(from: newBD)!, deadDate: self.constants.formatter.date(from: newDD), photo: newPhoto, biography: newBio)
             actors.append(newActor)
         }
     }
@@ -50,8 +51,9 @@ final class DataHandler {
             guard let newBD = director["birth_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newDD = director["dead_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newPhoto = director["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newBio = director["biography"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             
-            let newDirector = Director(id: newId, name: newName, birthDate: self.constants.formatter.date(from: newBD)!, deadDate: self.constants.formatter.date(from: newDD), photo: newPhoto)
+            let newDirector = Director(id: newId, name: newName, birthDate: self.constants.formatter.date(from: newBD)!, deadDate: self.constants.formatter.date(from: newDD), photo: newPhoto, biography: newBio)
             directors.append(newDirector)
         }
     }

@@ -5,21 +5,25 @@
             "name": "Christopher Nolan",
             "birth_date": "30/07/1970",
             "dead_date": "",
-            "photo_name": "nolan.jpg"
+            "photo_name": "nolan.jpg",
+            "biography": "He is a British film director, screenwriter, producer and publisher, nominated five times for the Oscar. His films often deal with topics of psychology, such as memory in Memento or dreams in Inception. Since its inception was recognized for his work in his first feature Following. Nolan rose to fame with his second feature film Memento, based on a short story written by his own brother, Jonathan Nolan, which they would later adapt together to a conventional script to film the film and for which they were candidates for the Oscar in the category of best Original screenplay.
+"
         },
         {
             "id": 1,
             "name": "Irvin Kershner",
             "birth_date": "29/04/1923",
             "dead_date": "27/11/2010",
-            "photo_name": "kershner.jpg"
+            "photo_name": "kershner.jpg",
+            "biography": "He was an occasional film director and actor, famous for directing the second movie in the Star Wars saga, Star Wars: Episode V - The Empire Strikes Back, the unofficial James Bond movie Never Say Never Again and the sequel from the classic RoboCop 2. Irvin Kershner died on November 27, 2010, at the age of 87, victim of a long illness."
         },
         {
             "id": 3,
             "name": "George Lucas",
             "birth_date": "14/05/1944",
             "dead_date": "",
-            "photo_name": "lucas.jpg"
+            "photo_name": "lucas.jpg",
+            "biography": "He is an American filmmaker, creator of the film sagas of Star Wars and Indiana Jones, and former president of Lucasfilm Limited, LucasArts Entertainment Company, Lucas Digital Ltd, Lucas Licensing, LucasBooks and Lucas Learning Ltd. He was considered, two consecutive years, the fourth person most powerful in the entertainment industry, behind the owners of Time Warner, Turner and Steven Spielberg."
         }
     ]
 }
