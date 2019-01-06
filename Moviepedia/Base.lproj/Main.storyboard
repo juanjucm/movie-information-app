@@ -270,6 +270,7 @@
                         <viewLayoutGuide key="safeArea" id="W5E-C9-Oi7"/>
                     </view>
                     <connections>
+                        <outlet property="filmsTableView" destination="9BJ-ri-gRy" id="bAw-yX-8Lm"/>
                         <outlet property="personAgeLabel" destination="NSO-JM-6lf" id="LPE-c9-q7O"/>
                         <outlet property="personBiographyLabel" destination="xs5-jx-6sF" id="wNm-Ci-ory"/>
                         <outlet property="personBirthLabel" destination="JIJ-fM-JKk" id="2jZ-QP-ySM"/>

@@ -14,7 +14,7 @@ class PersonDetailTableViewCell: UITableViewCell{
     @IBOutlet weak var filmImageFrame: UIView!
 }
 
-class PersonDetailViewController: UITableViewController{
+class PersonDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     let constants = Constants()
     
     var actor: Actor?
@@ -26,14 +26,16 @@ class PersonDetailViewController: UITableViewController{
     @IBOutlet weak var personNameLabel: UILabel!
     @IBOutlet weak var personBiographyLabel: UILabel!
     @IBOutlet weak var personFrame: UIView!
+    @IBOutlet weak var filmsTableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
     }
     
     override func viewDidLoad() {
+        self.filmsTableView.delegate = self
+        self.filmsTableView.dataSource = self
+        
         if actor != nil{
             self.personNameLabel?.text = actor!.name
             self.personBiographyLabel?.text = actor!.biography
@@ -79,14 +81,14 @@ class PersonDetailViewController: UITableViewController{
         }
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if actor != nil {
             return actor!.filmography.count
         }
         return director!.filmography.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PersonDetailCell", for:indexPath) as! PersonDetailTableViewCell
         
         var film: Film?
