@@ -13,6 +13,8 @@ class PersonDetailViewController: UIViewController{
     var director: Director?
     @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var personNameLabel: UILabel!
+    @IBOutlet weak var personBiographyLabel: UILabel!
+    @IBOutlet weak var personFrame: UIView!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -22,11 +24,31 @@ class PersonDetailViewController: UIViewController{
     
     override func viewDidLoad() {
         if actor != nil{
-            self.personImage?.image = UIImage(named: actor!.photo)
             self.personNameLabel?.text = actor!.name
+            self.personBiographyLabel?.text = actor!.biography
+            
+            self.personImage?.image = UIImage(named: actor!.photo)
+            self.personImage?.layer.cornerRadius = 10.0
+            self.personFrame?.clipsToBounds = false
+            self.personFrame?.layer.shadowColor = UIColor.black.cgColor
+            self.personFrame?.layer.shadowOpacity = 1
+            self.personFrame?.layer.shadowOffset = CGSize.zero
+            self.personFrame?.layer.shadowRadius = 4
+            self.personFrame?.layer.shadowPath = UIBezierPath(roundedRect: self.personFrame.bounds, cornerRadius: 4).cgPath
+            self.personFrame.layer.cornerRadius = self.personImage.layer.cornerRadius
         }else{
-            self.personImage.image = UIImage(named: director!.photo)
             self.personNameLabel?.text = director!.name
+            self.personBiographyLabel?.text = director!.biography
+            
+            self.personImage?.image = UIImage(named: director!.photo)
+            self.personImage?.layer.cornerRadius = 10.0
+            self.personFrame?.clipsToBounds = false
+            self.personFrame?.layer.shadowColor = UIColor.black.cgColor
+            self.personFrame?.layer.shadowOpacity = 1
+            self.personFrame?.layer.shadowOffset = CGSize.zero
+            self.personFrame?.layer.shadowRadius = 4
+            self.personFrame?.layer.shadowPath = UIBezierPath(roundedRect: self.personFrame.bounds, cornerRadius: 4).cgPath
+            self.personFrame.layer.cornerRadius = self.personImage.layer.cornerRadius
         }
     }
 }
