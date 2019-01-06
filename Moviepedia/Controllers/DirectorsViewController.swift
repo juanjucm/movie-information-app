@@ -39,11 +39,6 @@ class DirectorsViewController: UITableViewController {
         cell.directorImageFrame.layer.shadowPath = UIBezierPath(roundedRect: cell.directorImageFrame.bounds, cornerRadius: 5).cgPath
         cell.directorImageFrame.layer.cornerRadius = cell.directorImage.layer.cornerRadius
         
-        
-        /*if director.deadDate != nil{
-            cell.directorAgeLabel?.text = director.age + " years old" + " (\(constants.formatter.string(from:director.birthDate)) - \(constants.formatter.string(from: director.deadDate!))"
-        }
-        cell.directorAgeLabel?.text = director.age + " years old " + " (\(constants.formatter.string(from:director.birthDate)) - )"*/
         return cell
     }
     

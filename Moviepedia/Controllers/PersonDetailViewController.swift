@@ -9,8 +9,13 @@
 import UIKit
 
 class PersonDetailViewController: UIViewController{
+    let constants = Constants()
+    
     var actor: Actor?
     var director: Director?
+    @IBOutlet weak var personDeadLabel: UILabel!
+    @IBOutlet weak var personAgeLabel: UILabel!
+    @IBOutlet weak var personBirthLabel: UILabel!
     @IBOutlet weak var personImage: UIImageView!
     @IBOutlet weak var personNameLabel: UILabel!
     @IBOutlet weak var personBiographyLabel: UILabel!
@@ -27,6 +32,14 @@ class PersonDetailViewController: UIViewController{
             self.personNameLabel?.text = actor!.name
             self.personBiographyLabel?.text = actor!.biography
             
+            self.personBirthLabel?.text = constants.formatter.string(from:self.actor!.birthDate)
+            if actor!.deathDate != nil {
+                self.personDeadLabel?.text = constants.formatter.string(from:self.actor!.deathDate!)
+            }else{
+                self.personDeadLabel?.text = ""
+            }
+            self.personAgeLabel?.text = self.actor!.age
+            
             self.personImage?.image = UIImage(named: actor!.photo)
             self.personImage?.layer.cornerRadius = 10.0
             self.personFrame?.clipsToBounds = false
@@ -39,6 +52,14 @@ class PersonDetailViewController: UIViewController{
         }else{
             self.personNameLabel?.text = director!.name
             self.personBiographyLabel?.text = director!.biography
+            
+            self.personBirthLabel?.text = constants.formatter.string(from:self.director!.birthDate)
+            if director!.deathDate != nil {
+                self.personDeadLabel?.text = constants.formatter.string(from:self.director!.deathDate!)
+            }else{
+                self.personDeadLabel?.text = ""
+            }
+            self.personAgeLabel?.text = self.director!.age
             
             self.personImage?.image = UIImage(named: director!.photo)
             self.personImage?.layer.cornerRadius = 10.0

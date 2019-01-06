@@ -4,7 +4,7 @@
             "id": 0,
             "name": "Leonardo DiCaprio",
             "birth_date": "11/11/1974",
-            "dead_date": "",
+            "death_date": "",
             "photo_name": "dicaprio.jpg",
             "biography": "He has received numerous awards for his performance, including an Oscar for best actor and a BAFTA award for Best Actor for his performance in The reborn of 2016, two Golden Globes for best actor in drama for his performance in The Aviator in the 2005, in The reborn (2016) and a Golden Globe for best actor in comedy or musical for The Wolf of Wall Street, in 2014. Additionally, he has won the Silver Bear Prize and a Chlotrudis."
         },
@@ -12,7 +12,7 @@
             "id": 1,
             "name": "Ellen Page",
             "birth_date": "21/02/1987",
-            "dead_date": "",
+            "death_date": "",
             "photo_name": "page.jpg",
             "biography": "She was nominated for the Oscars and Golden Globes in the category of best actress for her performance in Juno (2007), where she starred with Michael Cera. He began his career in the movie Pit Pony (1997), at the age of 10 years. In 2007 he starred in the movie An American Crime. She was also seen acting in the movie Origen, where according to several film critics she played a good role, and for which she was nominated for the Saturn Award for Best Actress."
         },
@@ -20,7 +20,7 @@
             "id": 2,
             "name": "Matthew McConaughey",
             "birth_date": "04/11/1969",
-            "dead_date": "",
+            "death_date": "",
             "photo_name": "mcconaughey.jpg",
             "biography": "He is the winner of an Oscar, a Golden Globe and a SAG. Known for his participation in films like Dazed and Confused (1993), A Time to Kill (1996), Contact (1997), Frailty (2001), We Are Marshall (2006), Killer Joe (2011), The Lincoln Lawyer (2011) ), Bernie (2012), Mud (2012), The Wolf of Wall Street (2013), Dallas Buyers Club (2013), Interstellar (2014) and Free State of Jones (2016). Of the television roles he has played, he is especially recognized for his portrayal of Rustin Rust Cohle, a detective with the Louisiana State Police on HBO's acclaimed True Detective series."
         },
@@ -28,7 +28,7 @@
             "id": 3,
             "name": "Anne Hathaway",
             "birth_date": "12/11/1982",
-            "dead_date": "",
+            "death_date": "",
             "photo_name": "hathaway.jpg",
             "biography": "He won the Oscar, the Golden Globe, the BAFTA and the SAG for Best Supporting Actress for his performance in Los miserables. The jump to the cinema took place when it participated in the drama The Other Side of Heaven along with Christopher Gorham. But before starting production in New Zealand, Anne was cast for the title role of Mia Thermopolis in Garry Marshall's family comedy The Princess Diaries."
         },
@@ -36,7 +36,7 @@
             "id": 4,
             "name": "Mark Hamill",
             "birth_date": "23/09/1951",
-            "dead_date": "",
+            "death_date": "",
             "photo_name": "hamill.jpg",
             "biography": "He is known for playing Luke Skywalker in the Star Wars movie series, and for lending his voice to The Joker in various movies and television series DC Comics since 1992. Actor, voice actor, film director and writer, also He has appeared on stage in several theatrical productions. In the beginning, Hamill gave voice to Corey Anders, character of the animated series Jeannie de Hanna-Barbera Productions. In addition, he starred in television series such as The Texas Wheeler, Hawaii Five-O, General Hospital, The Partridge Family, and One Day at a Time. One of his first films was in the telefilm, The City."
         },
@@ -44,7 +44,7 @@
             "id": 5,
             "name": "Carrie Fisher",
             "birth_date": "21/10/1956",
-            "dead_date": "27/12/2016",
+            "death_date": "27/12/2016",
             "photo_name": "fisher.jpg",
             "biography": "She was an American actress, writer and scriptwriter of cinema and television recognized mainly by interpreting to Leia Organa in the saga of films Star Wars (episodes IV - IX). It also was recognized, among other roles by its personage of Angela in the Famous Family Guy series. On December 23, 2016, he suffered a heart attack. Finally, on December 27, 2016, he died."
         },
@@ -52,7 +52,7 @@
             "id": 6,
             "name": "Harrison Ford",
             "birth_date": "13/07/1942",
-            "dead_date": "",
+            "death_date": "",
             "photo_name": "ford.jpg",
             "biography": "His roles as Han Solo in the saga of Star Wars and Indiana Jones raised him to international star level. Although an initial flop at the box office, Ridley Scott's film Blade Runner, where he plays the role of replicating hunter Rick Deckard, ended up becoming a cult movie of science fiction. World famous for his roles in action films and adventures, he was awarded the Cecil B. DeMille award in recognition of his film career at the Golden Globes gala in 2002 and with the honorary Cesar to his career as a whole in 2010."
         }
