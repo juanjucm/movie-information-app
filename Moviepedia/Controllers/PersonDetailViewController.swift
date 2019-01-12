@@ -30,6 +30,7 @@ class PersonDetailViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.filmsTableView.backgroundColor = UIColor.lightGray
     }
     
     override func viewDidLoad() {
