@@ -527,15 +527,21 @@
                                 <rect key="frame" x="559" y="10" width="255" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Year"/>
                                     <segment title="Name"/>
                                     <segment title="Director"/>
+                                    <segment title="Year"/>
                                     <segment title="Country"/>
                                 </segments>
                                 <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="sortAction:" destination="JOA-5v-UGw" eventType="valueChanged" id="7wQ-I4-5mb"/>
+                                </connections>
                             </segmentedControl>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sortSegmentedControl" destination="io9-Eh-LwE" id="IHw-iA-tum"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA0-pb-y21" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,7 +11,7 @@ import Foundation
 class Film: NSObject {
     let id: Int
     let name: String
-    let year: String
+    let year: Date
     let time: String
     let country: String
     let photo: String
@@ -19,7 +19,7 @@ class Film: NSObject {
     let directors: [Director]
     let cast: [Actor]
     
-    init(id: Int, name:String, year:String, time:String, country:String, photo:String, trailer:String, directors: [Director], cast: [Actor]) {
+    init(id: Int, name:String, year:Date, time:String, country:String, photo:String, trailer:String, directors: [Director], cast: [Actor]) {
         self.id = id
         self.name = name
         self.year = year

@@ -21,15 +21,46 @@ class FilmsViewController: UITableViewController {
     let dataHandler = DataHandler.getShared()
     let constants = Constants()
     var selectedFilm: Film?
+    var filmsToHandle = Array<Film>()
+    
+    @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
+    
+    
+    override func viewDidLoad() {
+        filmsToHandle = dataHandler.films
+    }
+    
+    
+    @IBAction func sortAction(_ sender: Any) {
+        switch self.sortSegmentedControl.selectedSegmentIndex {
+        //sort by name
+        case 0:
+            filmsToHandle.sort {$0.name < $1.name}
+            self.tableView.reloadData()
+        //sort by directors name
+        case 1:
+            filmsToHandle.sort {$0.directors[0].name < $1.directors[0].name}
+            self.tableView.reloadData()
+        //sort by year
+        case 2:
+            filmsToHandle.sort {$0.year < $1.year}
+            self.tableView.reloadData()
+        //sort by country
+        case 3:
+            filmsToHandle.sort {$0.country < $1.country}
+        default:
+            break
+        }
+    }
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataHandler.films.count
+        return filmsToHandle.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FilmCell", for:indexPath) as! FilmsTableViewCell
-        let film =  dataHandler.films[indexPath.row]
+        let film =  filmsToHandle[indexPath.row]
         
         cell.filmNameLabel?.text = film.name
         var dirString = ""
@@ -39,7 +70,7 @@ class FilmsViewController: UITableViewController {
         }
         dirString.removeLast(2)
         cell.filmDirectorLabel?.text = dirString
-        cell.filmYearLabel.text = film.year
+        cell.filmYearLabel.text = self.constants.yearFormatter.string(from: film.year)
         cell.filmImage?.image = UIImage(named: film.photo)
         cell.filmImage?.layer.cornerRadius = 10.0
         
@@ -55,7 +86,7 @@ class FilmsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedFilm = dataHandler.films[indexPath.row]
+        selectedFilm = filmsToHandle[indexPath.row]
         performSegue(withIdentifier: "film_detail", sender: self)
     }
     

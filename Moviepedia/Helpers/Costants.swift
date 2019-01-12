@@ -15,10 +15,12 @@ enum MyError: Error{
 struct Constants {
     //date constants
     let formatter = DateFormatter()
+    let yearFormatter = DateFormatter()
     let calendar = Calendar(identifier: .gregorian)
     
     init() {
         formatter.dateFormat = "dd/MM/yyyy"
+        yearFormatter.dateFormat = "yyyy"
     }
 }
 

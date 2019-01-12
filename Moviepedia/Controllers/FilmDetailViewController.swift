@@ -53,7 +53,7 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         self.filmTrailer.load(youtubeRequest)
         
         self.filmNameLabel?.text = film!.name
-        self.filmYearLabel?.text = self.film?.year
+        self.filmYearLabel?.text = self.constants.yearFormatter.string(from: self.film!.year)
         self.filmCountryLabel?.text = self.film!.country
         self.filmDurationLabel?.text = self.film!.time
         

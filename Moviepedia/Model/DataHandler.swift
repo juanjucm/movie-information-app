@@ -90,7 +90,7 @@ final class DataHandler {
                 }
             }
             
-            let newFilm = Film(id: newId, name: newName, year: newYear, time: newTime, country: newCountry, photo: newPhoto, trailer: newTrailer, directors: directorsArray, cast: castList)
+            let newFilm = Film(id: newId, name: newName, year: self.constants.yearFormatter.date(from: newYear)!, time: newTime, country: newCountry, photo: newPhoto, trailer: newTrailer, directors: directorsArray, cast: castList)
             self.films.append(newFilm)
             
             //Include the film in actors/director's filmography
