@@ -640,7 +640,7 @@
                                             <outlet property="directorImage" destination="Jkf-0t-7cB" id="LTe-Bc-e8c"/>
                                             <outlet property="directorImageFrame" destination="wNh-s9-i7j" id="e3b-ls-qSV"/>
                                             <outlet property="directorNameLabel" destination="9Ag-gj-eld" id="phG-94-JOm"/>
-                                            <segue destination="Tea-lj-WLI" kind="show" identifier="director_detail_from_film" id="Ozp-5j-FOR"/>
+                                            <segue destination="Tea-lj-WLI" kind="show" identifier="director_detail_from_film" id="qAb-Gx-Bpg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -718,7 +718,7 @@
                                             <outlet property="actorImage" destination="Bql-of-G1w" id="DQp-iC-u98"/>
                                             <outlet property="actorImageFrame" destination="8HC-uh-Nuc" id="fik-wY-Jsv"/>
                                             <outlet property="actorNameLabel" destination="1Cy-B3-qSt" id="rmD-cf-DFg"/>
-                                            <segue destination="Tea-lj-WLI" kind="show" identifier="actor_detail_from_film" id="vI5-T9-iYq"/>
+                                            <segue destination="Tea-lj-WLI" kind="show" identifier="actor_detail_from_film" id="aZB-3G-5gy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -836,6 +836,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vI5-T9-iYq"/>
+        <segue reference="aZB-3G-5gy"/>
     </inferredMetricsTieBreakers>
 </document>
