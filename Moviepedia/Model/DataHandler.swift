@@ -66,6 +66,7 @@ final class DataHandler {
             guard let newTime = film["time"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newCountry = film["country"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newPhoto = film["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newTrailer = film["trailer"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newDirectors = film["directors"] as? Array<String> else{throw MyError.runtimeError("Parsing Error.")}
             guard let newCast = film["cast"] as? Array<String> else{throw MyError.runtimeError("Parsing Error.")}
             
@@ -89,7 +90,7 @@ final class DataHandler {
                 }
             }
             
-            let newFilm = Film(id: newId, name: newName, year: newYear, time: newTime, country: newCountry, photo: newPhoto, directors: directorsArray, cast: castList)
+            let newFilm = Film(id: newId, name: newName, year: newYear, time: newTime, country: newCountry, photo: newPhoto, trailer: newTrailer, directors: directorsArray, cast: castList)
             self.films.append(newFilm)
             
             //Include the film in actors/director's filmography

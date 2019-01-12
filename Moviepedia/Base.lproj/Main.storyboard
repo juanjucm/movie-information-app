@@ -89,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTO-do-BF0">
-                                <rect key="frame" x="62" y="79" width="613" height="40.5"/>
+                                <rect key="frame" x="62" y="129" width="613" height="40.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -101,7 +101,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs5-jx-6sF">
-                                <rect key="frame" x="62" y="424.5" width="747" height="203"/>
+                                <rect key="frame" x="62" y="474.5" width="747" height="203"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="747" id="7tg-Xy-OBD"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="747" id="nd5-rl-KQF"/>
@@ -118,7 +118,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsv-ON-y8z">
-                                <rect key="frame" x="62" y="144.5" width="400" height="255"/>
+                                <rect key="frame" x="62" y="194.5" width="400" height="255"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72A-JT-tbK">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="255"/>
@@ -138,25 +138,25 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIJ-fM-JKk">
-                                <rect key="frame" x="584" y="216.5" width="42" height="20.5"/>
+                                <rect key="frame" x="584" y="266.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlG-R8-ysF">
-                                <rect key="frame" x="584" y="264.5" width="42" height="20.5"/>
+                                <rect key="frame" x="584" y="314.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSO-JM-6lf">
-                                <rect key="frame" x="584" y="312.5" width="42" height="20.5"/>
+                                <rect key="frame" x="584" y="362.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wp-xE-AXX">
-                                <rect key="frame" x="509" y="216.5" width="40" height="19"/>
+                                <rect key="frame" x="509" y="266.5" width="40" height="19"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Birth">
                                         <attributes>
@@ -169,7 +169,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-5m-vZo">
-                                <rect key="frame" x="509" y="263.5" width="47.5" height="19"/>
+                                <rect key="frame" x="509" y="313.5" width="47.5" height="19"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Death">
                                         <attributes>
@@ -182,7 +182,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-p7-DW8">
-                                <rect key="frame" x="509" y="312.5" width="32.5" height="19"/>
+                                <rect key="frame" x="509" y="362.5" width="32.5" height="19"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Age">
                                         <attributes>
@@ -195,7 +195,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9BJ-ri-gRy">
-                                <rect key="frame" x="54" y="690.5" width="747" height="382.5"/>
+                                <rect key="frame" x="54" y="740.5" width="747" height="282.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -255,7 +255,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siT-Ms-A6j">
-                                <rect key="frame" x="62" y="645.5" width="65.5" height="28"/>
+                                <rect key="frame" x="62" y="695.5" width="65.5" height="28"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Films">
                                         <attributes>
@@ -505,7 +505,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQz-la-g9G">
-                                <rect key="frame" x="62" y="79" width="613" height="40.5"/>
+                                <rect key="frame" x="62" y="129" width="613" height="40.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -516,7 +516,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-0P-Sy5">
-                                <rect key="frame" x="62" y="144.5" width="400" height="255"/>
+                                <rect key="frame" x="62" y="194.5" width="400" height="255"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QBx-Ci-Y22">
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="255"/>
@@ -533,7 +533,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oao-ol-h2o">
-                                <rect key="frame" x="483" y="238" width="66" height="19"/>
+                                <rect key="frame" x="483" y="288" width="66" height="19"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Country">
                                         <attributes>
@@ -544,7 +544,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3K-xq-8P1">
-                                <rect key="frame" x="483" y="286" width="36" height="19"/>
+                                <rect key="frame" x="483" y="336" width="36" height="19"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Year">
                                         <attributes>
@@ -555,33 +555,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWt-HX-4wc">
-                                <rect key="frame" x="586" y="238" width="42" height="21"/>
+                                <rect key="frame" x="586" y="288" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yW-0Y-sbB">
-                                <rect key="frame" x="586" y="284" width="42" height="21"/>
+                                <rect key="frame" x="586" y="334" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJY-Pr-qvh">
-                                <rect key="frame" x="239" y="494" width="356" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zvh-lg-1wn">
-                                <rect key="frame" x="58" y="727" width="310" height="277"/>
+                                <rect key="frame" x="58" y="777" width="310" height="277"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="277" id="Hv8-La-Hhc"/>
@@ -647,7 +633,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6La-Zl-2wb">
-                                <rect key="frame" x="58" y="688" width="88" height="23"/>
+                                <rect key="frame" x="58" y="738" width="88" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Directors">
                                         <attributes>
@@ -659,7 +645,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eXW-uc-i8c">
-                                <rect key="frame" x="466" y="727" width="310" height="277"/>
+                                <rect key="frame" x="466" y="777" width="310" height="277"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="277" id="Jr1-ur-BSy"/>
@@ -725,7 +711,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-rk-fDz">
-                                <rect key="frame" x="712" y="687" width="64" height="23"/>
+                                <rect key="frame" x="712" y="737" width="64" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Actors">
                                         <attributes>
@@ -736,6 +722,15 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRY-1e-upA">
+                                <rect key="frame" x="219" y="510" width="409" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -770,7 +765,7 @@
                         <outlet property="filmFrame" destination="Orh-0P-Sy5" id="BK0-jx-3Lr"/>
                         <outlet property="filmImage" destination="QBx-Ci-Y22" id="nrG-HE-o31"/>
                         <outlet property="filmNameLabel" destination="oQz-la-g9G" id="fcP-RG-iJM"/>
-                        <outlet property="filmSynopsisLabel" destination="tJY-Pr-qvh" id="IOt-vl-hpf"/>
+                        <outlet property="filmTrailer" destination="PRY-1e-upA" id="IBC-x1-1VF"/>
                         <outlet property="filmYearLabel" destination="5yW-0Y-sbB" id="NXB-Me-zi8"/>
                     </connections>
                 </viewController>
@@ -837,7 +832,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hyh-QY-Xl4"/>
-        <segue reference="C0v-UJ-A9h"/>
+        <segue reference="ZtH-9K-naa"/>
+        <segue reference="dpP-Zg-LEk"/>
     </inferredMetricsTieBreakers>
 </document>

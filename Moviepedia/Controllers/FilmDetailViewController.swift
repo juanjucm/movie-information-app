@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import WebKit
 
 class FilmDetailTableViewCell: UITableViewCell{
     @IBOutlet weak var actorNameLabel: UILabel!
@@ -32,9 +32,8 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var filmImage: UIImageView!
     @IBOutlet weak var directorsTableView: UITableView!
     @IBOutlet weak var actorsTableView: UITableView!
-
+    @IBOutlet weak var filmTrailer: WKWebView!
     
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -45,12 +44,14 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         self.actorsTableView.dataSource = self
         self.directorsTableView.delegate = self
         self.directorsTableView.dataSource = self
-        
         self.actorsTableView.backgroundColor = UIColor.lightGray
         self.directorsTableView.backgroundColor = UIColor.lightGray
         
-        self.filmNameLabel?.text = film!.name
+        self.filmTrailer.configuration.allowsInlineMediaPlayback = true
+        let youtubeRequest = URLRequest(url: URL(string: self.film!.trailer)!)
+        self.filmTrailer.load(youtubeRequest)
         
+        self.filmNameLabel?.text = film!.name
         self.filmYearLabel?.text = self.film?.year
         self.filmCountryLabel?.text = self.film!.country
         

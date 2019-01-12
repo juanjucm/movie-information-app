@@ -15,16 +15,18 @@ class Film: NSObject {
     let time: String
     let country: String
     let photo: String
+    let trailer: String
     let directors: [Director]
     let cast: [Actor]
     
-    init(id: Int, name:String, year:String, time:String, country:String, photo:String, directors: [Director], cast: [Actor]) {
+    init(id: Int, name:String, year:String, time:String, country:String, photo:String, trailer:String, directors: [Director], cast: [Actor]) {
         self.id = id
         self.name = name
         self.year = year
         self.time = time
         self.country = country
         self.photo = photo
+        self.trailer = trailer
         self.directors = directors
         self.cast = cast
     }

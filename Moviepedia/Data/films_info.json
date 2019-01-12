@@ -10,7 +10,8 @@
             "cast": ["Leonardo DiCaprio",
                      "Ellen Page"
                     ],
-            "photo_name": "inception.jpg"
+            "photo_name": "inception.jpg",
+            "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
         },
         {
             "id": 1,
@@ -22,7 +23,8 @@
             "cast": ["Matthew McConaughey",
                      "Anne Hathaway"
             ],
-            "photo_name": "interestellar.jpg"
+            "photo_name": "interestellar.jpg",
+            "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E"
         },
         {
             "id": 2,
@@ -35,7 +37,8 @@
                      "Harrison Ford",
                      "Carrie Fisher",
             ],
-            "photo_name": "swepisodev.jpg"
+            "photo_name": "swepisodev.jpg",
+            "trailer": "https://www.youtube.com/watch?v=JNwNXF9Y6kY"
         },
         {
             "id": 3,
@@ -48,7 +51,8 @@
                      "Harrison Ford",
                      "Carrie Fisher",
             ],
-            "photo_name": "swepisodeiv.jpg"
+            "photo_name": "swepisodeiv.jpg",
+            "trailer": "https://www.youtube.com/watch?v=vZ734NWnAHA"
         }
     ]
 }
