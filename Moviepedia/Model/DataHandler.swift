@@ -66,15 +66,17 @@ final class DataHandler {
             guard let newTime = film["time"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newCountry = film["country"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newPhoto = film["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
-            guard let newDirector = film["director"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newDirectors = film["directors"] as? Array<String> else{throw MyError.runtimeError("Parsing Error.")}
             guard let newCast = film["cast"] as? Array<String> else{throw MyError.runtimeError("Parsing Error.")}
             
             //Get actors and director objects according with names:
-            var director: Director?
-            for d in self.directors {
-                if d.name == newDirector{
-                    director = d
-                    break
+            var directorsArray = Array<Director>()
+            for d1 in newDirectors {
+                for d2 in self.directors {
+                    if d2.name == d1{
+                        directorsArray.append(d2)
+                        continue
+                    }
                 }
             }
             var castList = Array<Actor>()
@@ -87,11 +89,13 @@ final class DataHandler {
                 }
             }
             
-            let newFilm = Film(id: newId, name: newName, year: newYear, time: newTime, country: newCountry, photo: newPhoto, director: director!, cast: castList)
+            let newFilm = Film(id: newId, name: newName, year: newYear, time: newTime, country: newCountry, photo: newPhoto, directors: directorsArray, cast: castList)
             self.films.append(newFilm)
             
             //Include the film in actors/director's filmography
-            director?.addFilm(film: newFilm)
+            for d in directorsArray{
+                d.addFilm(film: newFilm)
+            }
             for c in castList{
                 c.addFilm(film: newFilm)
             }

@@ -671,6 +671,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TZX-BS-3oe"/>
                     </view>
+                    <connections>
+                        <outlet property="actorsTableView" destination="eXW-uc-i8c" id="b2j-EH-46N"/>
+                        <outlet property="directorsTableView" destination="Zvh-lg-1wn" id="fnG-oJ-mT6"/>
+                        <outlet property="filmCountryLabel" destination="CWt-HX-4wc" id="8y3-LN-ho7"/>
+                        <outlet property="filmFrame" destination="Orh-0P-Sy5" id="BK0-jx-3Lr"/>
+                        <outlet property="filmImage" destination="QBx-Ci-Y22" id="nrG-HE-o31"/>
+                        <outlet property="filmNameLabel" destination="oQz-la-g9G" id="fcP-RG-iJM"/>
+                        <outlet property="filmSynopsisLabel" destination="tJY-Pr-qvh" id="IOt-vl-hpf"/>
+                        <outlet property="filmYearLabel" destination="5yW-0Y-sbB" id="NXB-Me-zi8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heg-S4-wiw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

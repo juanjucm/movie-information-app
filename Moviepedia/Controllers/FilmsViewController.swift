@@ -32,7 +32,13 @@ class FilmsViewController: UITableViewController {
         let film =  dataHandler.films[indexPath.row]
         
         cell.filmNameLabel?.text = film.name
-        cell.filmDirectorLabel?.text = film.director.name
+        var dirString = ""
+        for d in film.directors{
+            dirString.append(d.name)
+            dirString.append(", ")
+        }
+        dirString.removeLast(2)
+        cell.filmDirectorLabel?.text = dirString
         cell.filmYearLabel.text = film.year
         cell.filmImage?.image = UIImage(named: film.photo)
         cell.filmImage?.layer.cornerRadius = 10.0
