@@ -84,9 +84,15 @@
                                     <segment title="Birth Date"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sortAction:" destination="Kzk-pE-eZn" eventType="valueChanged" id="xDk-cw-Hds"/>
+                                </connections>
                             </segmentedControl>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sortSegmentedControl" destination="yzN-mM-HeT" id="oVU-GR-r9t"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otT-zp-d5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -925,6 +931,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ZtH-9K-naa"/>
-        <segue reference="A96-W2-N8g"/>
+        <segue reference="6Pd-6x-yF9"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,14 +18,40 @@ class DirectorsViewController: UITableViewController {
     let constants = Constants()
     let dataHandler = DataHandler.getShared()
     var selectedDirector: Director?
+    var directorsToHandle = Array<Director>()
+    
+    @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
+    
+    
+    override func viewDidLoad() {
+        directorsToHandle = dataHandler.directors
+    }
+    
+    
+    @IBAction func sortAction(_ sender: Any) {
+        switch self.sortSegmentedControl.selectedSegmentIndex {
+        //sort by name
+        case 0:
+            directorsToHandle.sort {$0.name < $1.name}
+            self.tableView.reloadData()
+        //sort by birth date
+        case 1:
+            directorsToHandle.sort {$0.birthDate < $1.birthDate}
+            self.tableView.reloadData()
+        default:
+            break
+        }
+
+    }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataHandler.directors.count
+        return directorsToHandle.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DirectorCell", for:indexPath) as! DirectorsTableViewCell
-        let director =  dataHandler.directors[indexPath.row]
+        let director =  directorsToHandle[indexPath.row]
         
         cell.directorNameLabel?.text = director.name
         cell.directorImage?.image = UIImage(named: director.photo)
@@ -43,7 +69,7 @@ class DirectorsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedDirector = dataHandler.directors[indexPath.row]
+        selectedDirector = directorsToHandle[indexPath.row]
         performSegue(withIdentifier: "director_detail", sender: self)
     }
     
