@@ -31,3 +31,4 @@ func parseDataFromJSON(resourceName: String, resourceDirectory: String = "Data")
     }
     return info
 }
+

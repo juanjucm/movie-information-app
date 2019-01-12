@@ -17,15 +17,39 @@ class ActorsTableViewCell: UITableViewCell{
 class ActorsViewController: UITableViewController {
     let constants = Constants()
     let dataHandler = DataHandler.getShared()
+    var actorsToHandle = Array<Actor>()
     var selectedActor: Actor?
     
+    @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
+    
+    
+    override func viewDidLoad() {
+        actorsToHandle = dataHandler.actors
+    }
+    
+    
+    @IBAction func sortAction(_ sender: Any) {
+        switch self.sortSegmentedControl.selectedSegmentIndex {
+        //sort by name
+        case 0:
+            actorsToHandle.sort {$0.name < $1.name}
+            self.tableView.reloadData()
+        //sort by birth date
+        case 1:
+            actorsToHandle.sort {$0.birthDate < $1.birthDate}
+            self.tableView.reloadData()
+        default:
+            break
+        }
+    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataHandler.actors.count
+        return actorsToHandle.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ActorCell", for:indexPath) as! ActorsTableViewCell
-        let actor =  dataHandler.actors[indexPath.row]
+        let actor =  actorsToHandle[indexPath.row]
         
         cell.actorNameLabel?.text = actor.name
         cell.actorImage?.image = UIImage(named: actor.photo)
@@ -43,7 +67,7 @@ class ActorsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedActor = dataHandler.actors[indexPath.row]
+        selectedActor = actorsToHandle[indexPath.row]
         performSegue(withIdentifier: "actor_detail", sender: self)
     }
     
