@@ -20,7 +20,7 @@ class FilmsTableViewCell: UITableViewCell{
 class FilmsViewController: UITableViewController {
     let dataHandler = DataHandler.getShared()
     let constants = Constants()
-    var filmSelected: Film?
+    var selectedFilm: Film?
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,11 +55,15 @@ class FilmsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        filmSelected = dataHandler.films[indexPath.row]
+        selectedFilm = dataHandler.films[indexPath.row]
         performSegue(withIdentifier: "", sender: self)
     }
     
-    /*func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        vc.filmSelected =
-    }*/
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "film_detail"{
+            if let destinationVC = segue.destination as? FilmDetailViewController {
+                destinationVC.film = self.selectedFilm
+            }
+        }
+    }
 }
