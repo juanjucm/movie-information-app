@@ -32,6 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }catch {
             print("")
         }
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : UIFont(name: "Arial-BoldMT", size: 17)!, NSAttributedString.Key.strokeColor : UIColor.white], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : UIFont(name: "Arial-BoldMT", size: 17)!], for: .selected)
+
         return true
     }
 
