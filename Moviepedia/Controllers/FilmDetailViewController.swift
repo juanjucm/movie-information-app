@@ -50,7 +50,6 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         self.directorsTableView.backgroundColor = UIColor.lightGray
         
         self.filmNameLabel?.text = film!.name
-        //self.filmSynopsisLabel?.text = film!.synopsis
         
         self.filmYearLabel?.text = self.film?.year
         self.filmCountryLabel?.text = self.film!.country
@@ -112,23 +111,22 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == actorsTableView{
-            print("hola")
             selectedActor = self.film!.cast[indexPath.row]
-            performSegue(withIdentifier: "actor_detail_from_film", sender: self)
+            performSegue(withIdentifier: "person_detail_from_film_actor", sender: self)
         }else{
             selectedDirector = self.film!.directors[indexPath.row]
-            performSegue(withIdentifier: "director_detail_from_film", sender: self)
+            performSegue(withIdentifier: "person_detail_from_film_director", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "director_detail_from_film"{
+        if segue.identifier == "person_detail_from_film_director"{
             if let destinationVC = segue.destination as? PersonDetailViewController {
                 destinationVC.director = self.selectedDirector
                 destinationVC.actor = nil
             }
         }
-        if segue.identifier == "actor_detail_from_film"{
+        if segue.identifier == "person_detail_from_film_actor"{
             if let destinationVC = segue.destination as? PersonDetailViewController {
                 destinationVC.actor = self.selectedActor
                 destinationVC.director = nil

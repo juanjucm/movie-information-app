@@ -43,7 +43,6 @@ class ActorsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
         selectedActor = dataHandler.actors[indexPath.row]
         performSegue(withIdentifier: "actor_detail", sender: self)
     }

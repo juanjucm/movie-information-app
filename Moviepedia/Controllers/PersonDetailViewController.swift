@@ -17,8 +17,10 @@ class PersonDetailTableViewCell: UITableViewCell{
 class PersonDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     let constants = Constants()
     
+    var dh = DataHandler.getShared()
     var actor: Actor?
     var director: Director?
+    var selectedFilm: Film?
     @IBOutlet weak var personDeadLabel: UILabel!
     @IBOutlet weak var personAgeLabel: UILabel!
     @IBOutlet weak var personBirthLabel: UILabel!
@@ -114,5 +116,22 @@ class PersonDetailViewController: UIViewController, UITableViewDelegate, UITable
         cell.filmImageFrame.layer.cornerRadius = cell.filmImage.layer.cornerRadius
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if actor != nil {
+            self.selectedFilm = actor!.filmography[indexPath.row]
+        }else{
+            self.selectedFilm = director!.filmography[indexPath.row]
+        }
+        performSegue(withIdentifier: "film_detail_from_person", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "film_detail_from_person"{
+            if let destinationVC = segue.destination as? FilmDetailViewController {
+                destinationVC.film = self.selectedFilm
+            }
+        }
     }
 }
