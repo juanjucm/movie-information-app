@@ -22,6 +22,8 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     let constants = Constants()
     
     var film: Film?
+    var selectedDirector: Director?
+    var selectedActor: Actor?
     @IBOutlet weak var filmNameLabel: UILabel!
     @IBOutlet weak var filmCountryLabel: UILabel!
     @IBOutlet weak var filmYearLabel: UILabel!
@@ -75,7 +77,7 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == self.directorsTableView{
             let cell = tableView.dequeueReusableCell(withIdentifier: "DirectorDetailCell", for:indexPath) as! FilmDetailTableViewCell
-            let director = film!.directors[indexPath.row]
+            let director = self.film!.directors[indexPath.row]
             
             cell.directorNameLabel?.text = director.name
             cell.directorImage?.image = UIImage(named: director.photo)
@@ -92,7 +94,7 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ActorDetailCell", for:indexPath) as! FilmDetailTableViewCell
-        let actor = film!.cast[indexPath.row]
+        let actor = self.film!.cast[indexPath.row]
         
         cell.actorNameLabel?.text = actor.name
         cell.actorImage?.image = UIImage(named: actor.photo)
@@ -106,5 +108,31 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.actorImageFrame.layer.shadowPath = UIBezierPath(roundedRect: cell.actorImageFrame.bounds, cornerRadius: 5).cgPath
         cell.actorImageFrame.layer.cornerRadius = cell.actorImage.layer.cornerRadius
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView == actorsTableView{
+            print("hola")
+            selectedActor = self.film!.cast[indexPath.row]
+            performSegue(withIdentifier: "actor_detail_from_film", sender: self)
+        }else{
+            selectedDirector = self.film!.directors[indexPath.row]
+            performSegue(withIdentifier: "director_detail_from_film", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "director_detail_from_film"{
+            if let destinationVC = segue.destination as? PersonDetailViewController {
+                destinationVC.director = self.selectedDirector
+                destinationVC.actor = nil
+            }
+        }
+        if segue.identifier == "actor_detail_from_film"{
+            if let destinationVC = segue.destination as? PersonDetailViewController {
+                destinationVC.actor = self.selectedActor
+                destinationVC.director = nil
+            }
+        }
     }
 }

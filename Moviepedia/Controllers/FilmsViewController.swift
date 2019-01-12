@@ -56,7 +56,7 @@ class FilmsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedFilm = dataHandler.films[indexPath.row]
-        performSegue(withIdentifier: "", sender: self)
+        performSegue(withIdentifier: "film_detail", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
