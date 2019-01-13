@@ -38,6 +38,7 @@ class PersonDetailViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         self.filmsTableView.delegate = self
         self.filmsTableView.dataSource = self
+        self.filmsTableView.backgroundColor = .black
         
         self.filmsTableView.backgroundColor = UIColor.lightGray
         
