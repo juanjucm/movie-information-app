@@ -41,6 +41,9 @@ class PersonDetailViewController: UIViewController, UITableViewDelegate, UITable
         
         self.filmsTableView.backgroundColor = UIColor.lightGray
         
+        self.personBirthLabel.layer.cornerRadius = 5
+        self.personBirthLabel.clipsToBounds = true
+        
         if actor != nil{
             self.personNameLabel?.text = actor!.name
             self.personBiographyLabel?.text = actor!.biography
