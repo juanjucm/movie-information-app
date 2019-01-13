@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 //Extracts data from json and returns an Array containing each element as a Dictionary.
 func parseDataFromJSON(resourceName: String, resourceDirectory: String = "Data") -> Array<Dictionary<String, AnyObject>> {
@@ -30,5 +31,23 @@ func parseDataFromJSON(resourceName: String, resourceDirectory: String = "Data")
         }
     }
     return info
+}
+
+extension UIImageView {
+    func downloadImage(link: String, mode: UIView.ContentMode = .scaleAspectFill){
+        contentMode = mode
+        guard let url = URL(string: link) else{return}
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard
+                let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else {return}
+            DispatchQueue.main.async() {
+                self.image = image
+            }
+        }.resume()
+    }
 }
 

@@ -54,8 +54,8 @@ class DirectorsViewController: UITableViewController {
         let director =  directorsToHandle[indexPath.row]
         
         cell.directorNameLabel?.text = director.name
-        cell.directorImage?.image = UIImage(named: director.photo)
-        cell.directorImage?.layer.cornerRadius = 10.0
+        cell.directorImage?.downloadImage(link: director.photo)
+        cell.directorImage?.layer.cornerRadius = 5.0
         
         cell.directorImageFrame.clipsToBounds = false
         cell.directorImageFrame.layer.shadowColor = UIColor.black.cgColor

@@ -57,8 +57,8 @@ class PersonDetailViewController: UIViewController, UITableViewDelegate, UITable
             }
             self.personAgeLabel?.text = self.actor!.age
             
-            self.personImage?.image = UIImage(named: actor!.photo)
-            self.personImage?.layer.cornerRadius = 10.0
+            self.personImage?.downloadImage(link: self.actor!.photo)
+            self.personImage?.layer.cornerRadius = 5.0
             self.personFrame?.clipsToBounds = false
             self.personFrame?.layer.shadowColor = UIColor.black.cgColor
             self.personFrame?.layer.shadowOpacity = 1
@@ -78,8 +78,8 @@ class PersonDetailViewController: UIViewController, UITableViewDelegate, UITable
             }
             self.personAgeLabel?.text = self.director!.age
             
-            self.personImage?.image = UIImage(named: director!.photo)
-            self.personImage?.layer.cornerRadius = 10.0
+            self.personImage?.downloadImage(link: self.director!.photo)
+            self.personImage?.layer.cornerRadius = 5.0
             self.personFrame?.clipsToBounds = false
             self.personFrame?.layer.shadowColor = UIColor.black.cgColor
             self.personFrame?.layer.shadowOpacity = 1
@@ -108,8 +108,8 @@ class PersonDetailViewController: UIViewController, UITableViewDelegate, UITable
         }
         
         cell.filmNameLabel?.text = film!.name
-        cell.filmImage?.image = UIImage(named: film!.photo)
-        cell.filmImage?.layer.cornerRadius = 10.0
+        cell.filmImage?.downloadImage(link: film!.photo)
+        cell.filmImage?.layer.cornerRadius = 5.0
         
         cell.filmImageFrame.clipsToBounds = false
         cell.filmImageFrame.layer.shadowColor = UIColor.black.cgColor

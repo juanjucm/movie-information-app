@@ -48,7 +48,7 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         self.actorsTableView.backgroundColor = UIColor.lightGray
         self.directorsTableView.backgroundColor = UIColor.lightGray
         
-        //self.filmTrailer.configuration.allowsInlineMediaPlayback = true
+        self.filmTrailer.configuration.allowsInlineMediaPlayback = true
         let youtubeRequest = URLRequest(url: URL(string: self.film!.trailer)!)
         self.filmTrailer.load(youtubeRequest)
         
@@ -56,8 +56,9 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         self.filmYearLabel?.text = self.constants.yearFormatter.string(from: self.film!.year)
         self.filmCountryLabel?.text = self.film!.country
         self.filmDurationLabel?.text = self.film!.time
+        self.filmSynopsisLabel?.text = self.film!.synopsis
         
-        self.filmImage?.image = UIImage(named: film!.photo)
+        self.filmImage?.downloadImage(link: film!.photo, mode: .scaleAspectFill)
         self.filmImage?.layer.cornerRadius = 10.0
         self.filmFrame?.clipsToBounds = false
         self.filmFrame?.layer.shadowColor = UIColor.black.cgColor
@@ -82,8 +83,8 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
             let director = self.film!.directors[indexPath.row]
             
             cell.directorNameLabel?.text = director.name
-            cell.directorImage?.image = UIImage(named: director.photo)
-            cell.directorImage?.layer.cornerRadius = 10.0
+            cell.directorImage?.downloadImage(link: director.photo)
+            cell.directorImage?.layer.cornerRadius = 5.0
             
             cell.directorImageFrame.clipsToBounds = false
             cell.directorImageFrame.layer.shadowColor = UIColor.black.cgColor
@@ -99,8 +100,8 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         let actor = self.film!.cast[indexPath.row]
         
         cell.actorNameLabel?.text = actor.name
-        cell.actorImage?.image = UIImage(named: actor.photo)
-        cell.actorImage?.layer.cornerRadius = 10.0
+        cell.actorImage?.downloadImage(link: actor.photo)
+        cell.actorImage?.layer.cornerRadius = 5.0
         
         cell.actorImageFrame.clipsToBounds = false
         cell.actorImageFrame.layer.shadowColor = UIColor.black.cgColor

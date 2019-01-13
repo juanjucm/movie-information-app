@@ -52,8 +52,8 @@ class ActorsViewController: UITableViewController {
         let actor =  actorsToHandle[indexPath.row]
         
         cell.actorNameLabel?.text = actor.name
-        cell.actorImage?.image = UIImage(named: actor.photo)
-        cell.actorImage?.layer.cornerRadius = 10.0
+        cell.actorImage?.downloadImage(link: actor.photo)
+        cell.actorImage?.layer.cornerRadius = 5.0
         
         cell.actorImageFrame.clipsToBounds = false
         cell.actorImageFrame.layer.shadowColor = UIColor.black.cgColor

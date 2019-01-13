@@ -71,8 +71,8 @@ class FilmsViewController: UITableViewController {
         dirString.removeLast(2)
         cell.filmDirectorLabel?.text = dirString
         cell.filmYearLabel.text = self.constants.yearFormatter.string(from: film.year)
-        cell.filmImage?.image = UIImage(named: film.photo)
-        cell.filmImage?.layer.cornerRadius = 10.0
+        cell.filmImage?.downloadImage(link: film.photo)
+        cell.filmImage?.layer.cornerRadius = 5.0
         
         cell.filmImageFrame.clipsToBounds = false
         cell.filmImageFrame.layer.shadowColor = UIColor.black.cgColor

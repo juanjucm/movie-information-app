@@ -35,7 +35,7 @@ final class DataHandler {
             guard let newName = actor["name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newBD = actor["birth_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newDD = actor["death_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
-            guard let newPhoto = actor["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newPhoto = actor["photo"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newBio = actor["biography"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             
             let newActor = Actor(id: newId, name: newName, birthDate: self.constants.formatter.date(from: newBD)!, deathDate: self.constants.formatter.date(from: newDD), photo: newPhoto, biography: newBio)
@@ -50,7 +50,7 @@ final class DataHandler {
             guard let newName = director["name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newBD = director["birth_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newDD = director["death_date"] as? String else{throw MyError.runtimeError("Parsing Error.")}
-            guard let newPhoto = director["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newPhoto = director["photo"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newBio = director["biography"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             
             let newDirector = Director(id: newId, name: newName, birthDate: self.constants.formatter.date(from: newBD)!, deathDate: self.constants.formatter.date(from: newDD), photo: newPhoto, biography: newBio)
@@ -65,7 +65,8 @@ final class DataHandler {
             guard let newYear = film["year"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newTime = film["time"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newCountry = film["country"] as? String else{throw MyError.runtimeError("Parsing Error.")}
-            guard let newPhoto = film["photo_name"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newPhoto = film["photo"] as? String else{throw MyError.runtimeError("Parsing Error.")}
+            guard let newSynopsis = film["synopsis"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newTrailer = film["trailer"] as? String else{throw MyError.runtimeError("Parsing Error.")}
             guard let newDirectors = film["directors"] as? Array<String> else{throw MyError.runtimeError("Parsing Error.")}
             guard let newCast = film["cast"] as? Array<String> else{throw MyError.runtimeError("Parsing Error.")}
@@ -90,7 +91,7 @@ final class DataHandler {
                 }
             }
             
-            let newFilm = Film(id: newId, name: newName, year: self.constants.yearFormatter.date(from: newYear)!, time: newTime, country: newCountry, photo: newPhoto, trailer: newTrailer, directors: directorsArray, cast: castList)
+            let newFilm = Film(id: newId, name: newName, year: self.constants.yearFormatter.date(from: newYear)!, time: newTime, country: newCountry, photo: newPhoto, trailer: newTrailer, synopsis: newSynopsis, directors: directorsArray, cast: castList)
             self.films.append(newFilm)
             
             //Include the film in actors/director's filmography
