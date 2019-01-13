@@ -593,17 +593,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQx-se-cIe">
                                         <rect key="frame" x="0.0" y="0.0" width="834" height="1570"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQz-la-g9G">
-                                                <rect key="frame" x="28" y="27" width="613" height="40.5"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Label">
-                                                        <attributes>
-                                                            <font key="NSFont" size="36" name="Arial-BoldMT"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oao-ol-h2o">
                                                 <rect key="frame" x="373" y="145.5" width="66" height="19"/>
                                                 <attributedString key="attributedText">
@@ -787,6 +776,18 @@
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-rk-fDz">
+                                                <rect key="frame" x="551" y="1034" width="64" height="23"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Actors">
+                                                        <attributes>
+                                                            <font key="NSFont" size="20" name="Arial-BoldMT"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ6-aK-9dD">
                                                 <rect key="frame" x="476" y="97.5" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -855,13 +856,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-rk-fDz">
-                                                <rect key="frame" x="551" y="1034" width="64" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQz-la-g9G">
+                                                <rect key="frame" x="38" y="26" width="684" height="41"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="Actors">
+                                                    <fragment content="Label">
                                                         <attributes>
-                                                            <font key="NSFont" size="20" name="Arial-BoldMT"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <font key="NSFont" size="36" name="Arial-BoldMT"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
@@ -874,33 +874,33 @@
                                             <constraint firstAttribute="trailing" secondItem="Hh4-rk-fDz" secondAttribute="trailing" constant="219" id="6va-Vb-ItA"/>
                                             <constraint firstItem="YIk-jd-YKz" firstAttribute="leading" secondItem="Orh-0P-Sy5" secondAttribute="trailing" constant="15" id="8Jh-xy-NsU"/>
                                             <constraint firstItem="Zvh-lg-1wn" firstAttribute="leading" secondItem="gQx-se-cIe" secondAttribute="leading" constant="41" id="97y-Xq-kkl"/>
-                                            <constraint firstItem="ZAi-lc-clW" firstAttribute="top" secondItem="oQz-la-g9G" secondAttribute="bottom" constant="30" id="9HT-JF-ntg"/>
                                             <constraint firstItem="M3K-xq-8P1" firstAttribute="top" secondItem="oao-ol-h2o" secondAttribute="bottom" constant="29" id="Acs-UF-WAT"/>
                                             <constraint firstItem="M3K-xq-8P1" firstAttribute="leading" secondItem="Orh-0P-Sy5" secondAttribute="trailing" constant="15" id="Bna-S5-VJR"/>
-                                            <constraint firstAttribute="trailing" secondItem="oQz-la-g9G" secondAttribute="trailing" constant="193" id="DLf-jK-OTG"/>
                                             <constraint firstItem="oao-ol-h2o" firstAttribute="leading" secondItem="Orh-0P-Sy5" secondAttribute="trailing" constant="15" id="GQg-xI-Vhl"/>
                                             <constraint firstItem="Zvh-lg-1wn" firstAttribute="top" secondItem="6La-Zl-2wb" secondAttribute="bottom" constant="48" id="GcE-ZQ-kbZ"/>
                                             <constraint firstItem="ZAi-lc-clW" firstAttribute="leading" secondItem="Orh-0P-Sy5" secondAttribute="trailing" constant="15" id="IAb-ED-efh"/>
+                                            <constraint firstItem="oQz-la-g9G" firstAttribute="top" secondItem="gQx-se-cIe" secondAttribute="top" constant="26" id="KTW-7U-c8R"/>
+                                            <constraint firstItem="oQz-la-g9G" firstAttribute="leading" secondItem="gQx-se-cIe" secondAttribute="leading" constant="38" id="KTs-hz-ev8"/>
                                             <constraint firstItem="vQ6-aK-9dD" firstAttribute="leading" secondItem="ZAi-lc-clW" secondAttribute="trailing" constant="33" id="LeH-4F-Lgx"/>
                                             <constraint firstItem="oao-ol-h2o" firstAttribute="top" secondItem="ZAi-lc-clW" secondAttribute="bottom" constant="29" id="M6C-AB-m05"/>
+                                            <constraint firstItem="vQ6-aK-9dD" firstAttribute="top" secondItem="oQz-la-g9G" secondAttribute="bottom" constant="30.5" id="Mbn-2C-Rqm"/>
+                                            <constraint firstItem="ZAi-lc-clW" firstAttribute="top" secondItem="oQz-la-g9G" secondAttribute="bottom" constant="30.5" id="PkS-KH-qV5"/>
                                             <constraint firstAttribute="trailing" secondItem="eXW-uc-i8c" secondAttribute="trailing" constant="96" id="PoR-BV-lSS"/>
                                             <constraint firstItem="IG1-Ue-nVf" firstAttribute="top" secondItem="Orh-0P-Sy5" secondAttribute="bottom" constant="55" id="TCK-jI-pqE"/>
                                             <constraint firstAttribute="height" constant="1570" id="Trt-Zk-RE2"/>
                                             <constraint firstItem="CWt-HX-4wc" firstAttribute="top" secondItem="vQ6-aK-9dD" secondAttribute="bottom" constant="24" id="Ub6-8g-kL7"/>
-                                            <constraint firstItem="vQ6-aK-9dD" firstAttribute="top" secondItem="oQz-la-g9G" secondAttribute="bottom" constant="30" id="XQQ-pz-I3x"/>
+                                            <constraint firstAttribute="trailing" secondItem="oQz-la-g9G" secondAttribute="trailing" constant="112" id="XZk-mt-KzN"/>
                                             <constraint firstItem="5yW-0Y-sbB" firstAttribute="top" secondItem="CWt-HX-4wc" secondAttribute="bottom" constant="25" id="Y4z-n4-0Ol"/>
-                                            <constraint firstItem="oQz-la-g9G" firstAttribute="leading" secondItem="gQx-se-cIe" secondAttribute="leading" constant="28" id="abK-0i-bZk"/>
                                             <constraint firstAttribute="width" constant="834" id="aof-Xe-B78"/>
                                             <constraint firstItem="eXW-uc-i8c" firstAttribute="leading" secondItem="Zvh-lg-1wn" secondAttribute="trailing" constant="77" id="ciH-VU-LWF"/>
+                                            <constraint firstItem="Orh-0P-Sy5" firstAttribute="top" secondItem="oQz-la-g9G" secondAttribute="bottom" constant="19" id="dUs-ft-ohl"/>
                                             <constraint firstAttribute="trailing" secondItem="IG1-Ue-nVf" secondAttribute="trailing" constant="60" id="ddM-PX-RDS"/>
-                                            <constraint firstItem="oQz-la-g9G" firstAttribute="top" secondItem="gQx-se-cIe" secondAttribute="top" constant="27" id="eW1-ze-6QC"/>
                                             <constraint firstItem="Orh-0P-Sy5" firstAttribute="leading" secondItem="gQx-se-cIe" secondAttribute="leading" constant="38" id="erC-zy-798"/>
                                             <constraint firstItem="IG1-Ue-nVf" firstAttribute="leading" secondItem="gQx-se-cIe" secondAttribute="leading" constant="61" id="h5A-Ns-2Ry"/>
                                             <constraint firstItem="Hh4-rk-fDz" firstAttribute="top" secondItem="IG1-Ue-nVf" secondAttribute="bottom" constant="70" id="hmk-rO-vbu"/>
                                             <constraint firstItem="5yW-0Y-sbB" firstAttribute="leading" secondItem="M3K-xq-8P1" secondAttribute="trailing" constant="67" id="jYI-za-ZFw"/>
                                             <constraint firstItem="vA9-Eq-HPb" firstAttribute="leading" secondItem="M3K-xq-8P1" secondAttribute="leading" id="jzE-HN-cjN"/>
                                             <constraint firstItem="6La-Zl-2wb" firstAttribute="leading" secondItem="gQx-se-cIe" secondAttribute="leading" constant="152" id="mj7-Yj-oEU"/>
-                                            <constraint firstItem="Orh-0P-Sy5" firstAttribute="top" secondItem="oQz-la-g9G" secondAttribute="bottom" constant="18.5" id="mmH-x9-x0C"/>
                                             <constraint firstItem="eXW-uc-i8c" firstAttribute="top" secondItem="Hh4-rk-fDz" secondAttribute="bottom" constant="48" id="nKu-cd-ek4"/>
                                             <constraint firstItem="CWt-HX-4wc" firstAttribute="leading" secondItem="oao-ol-h2o" secondAttribute="trailing" constant="37" id="pUf-lT-tzB"/>
                                             <constraint firstItem="6La-Zl-2wb" firstAttribute="top" secondItem="IG1-Ue-nVf" secondAttribute="bottom" constant="70" id="sMN-8d-p1f"/>

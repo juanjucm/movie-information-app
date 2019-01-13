@@ -45,8 +45,6 @@ class FilmDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         self.actorsTableView.dataSource = self
         self.directorsTableView.delegate = self
         self.directorsTableView.dataSource = self
-        self.actorsTableView.backgroundColor = UIColor.lightGray
-        self.directorsTableView.backgroundColor = UIColor.lightGray
         
         self.filmTrailer.configuration.allowsInlineMediaPlayback = true
         let youtubeRequest = URLRequest(url: URL(string: self.film!.trailer)!)
